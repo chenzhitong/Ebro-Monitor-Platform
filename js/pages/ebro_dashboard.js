@@ -139,7 +139,29 @@
 						show: false
 					},
 					colors: ["#7baf42","#efa91f","#f04b51","#0892cd","#b1b1b1"]
-				});
+                });
+                $.plot('#flot_browsers2', data_browsers, {
+                    series: {
+                        pie: {
+                            show: true,
+                            radius: 1,
+                            label: {
+                                show: true,
+                                radius: 3 / 4,
+                                formatter: labelFormatter,
+                                background: {
+                                    opacity: 0.5,
+                                    color: '#000'
+                                }
+                            },
+                            innerRadius: 0.5
+                        }
+                    },
+                    legend: {
+                        show: false
+                    },
+                    colors: ["#7baf42", "#efa91f", "#f04b51", "#0892cd", "#b1b1b1"]
+                });
 				
 			}
 		},
