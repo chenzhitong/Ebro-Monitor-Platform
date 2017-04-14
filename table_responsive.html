@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ebro Admin Template v1.3</title>
+		
+		<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		
+	<!-- bootstrap framework-->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<!-- todc-bootstrap -->
+		<link rel="stylesheet" href="css/todc-bootstrap.min.css">
+	<!-- font awesome -->        
+		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<!-- flag icon set -->        
+		<link rel="stylesheet" href="img/flags/flags.css">
+	<!-- retina ready -->
+		<link rel="stylesheet" href="css/retina.css">
+	<!-- bootstrap switch -->
+		<link rel="stylesheet" href="js/lib/bootstrap-switch/stylesheets/bootstrap-switch.css">
+		<link rel="stylesheet" href="js/lib/bootstrap-switch/stylesheets/ebro_bootstrapSwitch.css">	
+	
+	<!-- aditional stylesheets -->
+		<!-- responsive table -->
+			<link href="js/lib/FooTable/css/footable.core.css" rel="stylesheet" type="text/css"/>
+
+	<!-- ebro styles -->
+		<link rel="stylesheet" href="css/style.css">
+	<!-- ebro theme -->
+		<link rel="stylesheet" href="css/theme/color_1.css" id="theme">
+		
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+		<script src="js/ie/html5shiv.js"></script>
+		<script src="js/ie/respond.min.js"></script>
+		<script src="js/ie/excanvas.min.js"></script>
+	<![endif]-->
+
+	<!-- custom fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+			
+	</head>
+	<body class=" sidebar_hidden side_fixed">
+		<div id="wrapper_all">
+			<header id="top_header">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6 col-sm-2">
+							<a href="dashboard1.html" class="logo_main" title="Ebro Admin Template:"><img src="img/logo_main.png" alt=""></a>
+						</div>
+						<div class="col-sm-push-4 col-sm-3 text-right hidden-xs">
+							<div class="notification_dropdown dropdown">
+								<a href="#" class="notification_icon dropdown-toggle" data-toggle="dropdown">
+									<span class="label label-danger">8</span>
+									<i class="icon-comment-alt icon-2x"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="dropdown_heading">Comments</div>
+										<div class="dropdown_content">
+											<ul class="dropdown_items">
+												<li>
+													<h3><span class="small_info">12:43</span><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet&hellip;</p>
+												</li>
+												<li>
+													<h3><span class="small_info">Today</span><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet&hellip;</p>
+												</li>
+												<li>
+													<h3><span class="small_info">14 Aug</span><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet&hellip;</p>
+												</li>
+											</ul>
+										</div>
+										<div class="dropdown_footer"><a href="#" class="btn btn-sm btn-default">Show all</a></div>
+									</li>
+								</ul>
+							</div>
+							<div class="notification_separator"></div>
+							<div class="notification_dropdown dropdown">
+								<a href="#" class="notification_icon dropdown-toggle" data-toggle="dropdown">
+									<span class="label label-danger">12</span>
+									<i class="icon-envelope-alt icon-2x"></i>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-wide">
+									<li>
+										<div class="dropdown_heading">Messages</div>
+										<div class="dropdown_content">
+											<ul class="dropdown_items">
+												<li>
+													<h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+													<p class="large_info">Sean Walter, 24.05.2014</p>
+													<i class="icon-exclamation-sign indicator"></i>
+												</li>
+												<li>
+													<h3><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aliquam assumenda&hellip;</p>
+													<p class="large_info">Sean Walter, 24.05.2014</p>
+												</li>
+												<li>
+													<h3><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet, consectetur&hellip;</p>
+													<p class="large_info">Sean Walter, 24.05.2014</p>
+													<i class="icon-exclamation-sign indicator"></i>
+												</li>
+											</ul>
+										</div>
+										<div class="dropdown_footer">
+											<a href="#" class="btn btn-sm btn-default">Show all</a>
+											<div class="pull-right dropdown_actions">
+												<a href="#"><i class="icon-refresh"></i></a>
+												<a href="#"><i class="icon-cog"></i></a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-push-4 col-sm-3">
+							<div class="pull-right dropdown">
+								<a href="#" class="user_info dropdown-toggle" title="Jonathan Hay" data-toggle="dropdown">
+									<img src="img/user_avatar.png" alt="">
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="user_profile.html">Profile</a></li>
+									<li><a href="javascript:void(0)">Another action</a></li>
+									<li><a href="login_page.html">Log Out</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-pull-6 col-sm-4">
+							<form class="main_search">
+								<input type="text" id="search_query" name="search_query" class="typeahead form-control">
+								<button type="submit" class="btn btn-primary btn-xs"><i class="icon-search icon-white"></i></button>
+							</form> 
+						</div>
+					</div>
+				</div>
+			</header>						
+			<nav id="top_navigation">
+				<div class="container">
+					<ul id="icon_nav_h" class="top_ico_nav clearfix">
+						<li>
+							<a href="#">
+								<i class="icon-home icon-2x"></i>
+								<span class="menu_label">Home</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<i class="icon-edit icon-2x"></i>
+								<span class="menu_label">Content</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<i class="icon-group icon-2x"></i>
+								<span class="menu_label">Users</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<span class="label label-danger">12</span>
+								<i class="icon-tasks icon-2x"></i>
+								<span class="menu_label">Tasks</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<i class="icon-beaker icon-2x"></i>
+								<span class="menu_label">Plugins</span>
+							</a>
+						</li>
+						<li class="active">             
+							<a href="#">
+								<i class="icon-book icon-2x"></i>
+								<span class="menu_label">Help</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<span class="label label-success">$2 347</span>
+								<i class="icon-tags icon-2x"></i>
+								<span class="menu_label">E-Commerce</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<i class="icon-wrench icon-2x"></i>
+								<span class="menu_label">Settings</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- mobile navigation -->
+			<nav id="mobile_navigation"></nav>
+			
+			<section id="breadcrumbs">
+				<div class="container">
+					<ul>
+						<li><a href="#">Ebro Admin</a></li>
+						<li><a href="#">Components</a></li>
+						<li><span>Responsive Table</span></li>						
+					</ul>
+				</div>
+			</section>
+			<section class="container clearfix main_section">
+				<div id="main_content_outer" class="clearfix">
+					<div id="main_content">
+						
+						<!-- main content -->
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">Responsive Table</h4>
+									</div>
+									<div class="panel_controls">
+										<div class="row">
+											<div class="col-sm-4">
+												<label for="table_search">Search:</label>
+												<input type="text" id="table_search" class="form-control">
+											</div>
+											<div class="col-sm-3 col-xs-6">
+												<label for="un_member">UN Member:</label>
+												<select name="un_member" id="un_member" class="form-control">
+													<option value="">---</option>
+													<option value="yes_UN">Yes</option>
+													<option value="no_UN">No</option>
+													<option value="some_UN">Some</option>
+													<option value="former_UN">Former</option>
+												</select>
+											</div>
+											<div class="col-sm-3 col-xs-6">
+												<label>&nbsp;</label>
+												<button class="btn btn-default btn-sm" id="clear-filter">Clear filters</button>
+											</div>
+										</div>
+									</div>
+									<table id="resp_table" class="table toggle-square" data-filter="#table_search" data-page-size="40">
+										<thead>
+											<tr>
+												<th data-toggle="true">Short name</th>
+												<th data-hide="phone,tablet">Long Name</th>
+												<th data-hide="phone">Calling Code</th>
+												<th data-hide="phone,tablet">ISO 2</th>
+												<th data-hide="phone,tablet">ccTLD</th>
+												<th>UN Member</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr><td>Afghanistan</td><td>Islamic Republic of Afghanistan</td><td>93</td><td>AF</td><td>.af</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Aland Islands</td><td>Åland Islands</td><td>358</td><td>AX</td><td>.ax</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Albania</td><td>Republic of Albania</td><td>355</td><td>AL</td><td>.al</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Algeria</td><td>People's Democratic Republic of Algeria</td><td>213</td><td>DZ</td><td>.dz</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>American Samoa</td><td>American Samoa</td><td>1+684</td><td>AS</td><td>.as</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Andorra</td><td>Principality of Andorra</td><td>376</td><td>AD</td><td>.ad</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Angola</td><td>Republic of Angola</td><td>244</td><td>AO</td><td>.ao</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Anguilla</td><td>Anguilla</td><td>1+264</td><td>AI</td><td>.ai</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Antarctica</td><td>Antarctica</td><td>672</td><td>AQ</td><td>.aq</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Antigua and Barbuda</td><td>Antigua and Barbuda</td><td>1+268</td><td>AG</td><td>.ag</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Argentina</td><td>Argentine Republic</td><td>54</td><td>AR</td><td>.ar</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Armenia</td><td>Republic of Armenia</td><td>374</td><td>AM</td><td>.am</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Aruba</td><td>Aruba</td><td>297</td><td>AW</td><td>.aw</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Australia</td><td>Commonwealth of Australia</td><td>61</td><td>AU</td><td>.au</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Austria</td><td>Republic of Austria</td><td>43</td><td>AT</td><td>.at</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Azerbaijan</td><td>Republic of Azerbaijan</td><td>994</td><td>AZ</td><td>.az</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Bahamas</td><td>Commonwealth of The Bahamas</td><td>1+242</td><td>BS</td><td>.bs</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Bahrain</td><td>Kingdom of Bahrain</td><td>973</td><td>BH</td><td>.bh</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Bangladesh</td><td>People's Republic of Bangladesh</td><td>880</td><td>BD</td><td>.bd</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Barbados</td><td>Barbados</td><td>1+246</td><td>BB</td><td>.bb</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Belarus</td><td>Republic of Belarus</td><td>375</td><td>BY</td><td>.by</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Belgium</td><td>Kingdom of Belgium</td><td>32</td><td>BE</td><td>.be</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Belize</td><td>Belize</td><td>501</td><td>BZ</td><td>.bz</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Benin</td><td>Republic of Benin</td><td>229</td><td>BJ</td><td>.bj</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Bermuda</td><td>Bermuda Islands</td><td>1+441</td><td>BM</td><td>.bm</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Bhutan</td><td>Kingdom of Bhutan</td><td>975</td><td>BT</td><td>.bt</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Bolivia</td><td>Plurinational State of Bolivia</td><td>591</td><td>BO</td><td>.bo</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Bonaire, Sint Eustatius and Saba</td><td>Bonaire, Sint Eustatius and Saba</td><td>599</td><td>BQ</td><td>.bq</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Bosnia and Herzegovina</td><td>Bosnia and Herzegovina</td><td>387</td><td>BA</td><td>.ba</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Botswana</td><td>Republic of Botswana</td><td>267</td><td>BW</td><td>.bw</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Bouvet Island</td><td>Bouvet Island</td><td>NONE</td><td>BV</td><td>.bv</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Brazil</td><td>Federative Republic of Brazil</td><td>55</td><td>BR</td><td>.br</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>British Indian Ocean Territory</td><td>British Indian Ocean Territory</td><td>246</td><td>IO</td><td>.io</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Brunei</td><td>Brunei Darussalam</td><td>673</td><td>BN</td><td>.bn</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Bulgaria</td><td>Republic of Bulgaria</td><td>359</td><td>BG</td><td>.bg</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Burkina Faso</td><td>Burkina Faso</td><td>226</td><td>BF</td><td>.bf</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Burundi</td><td>Republic of Burundi</td><td>257</td><td>BI</td><td>.bi</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Cambodia</td><td>Kingdom of Cambodia</td><td>855</td><td>KH</td><td>.kh</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Cameroon</td><td>Republic of Cameroon</td><td>237</td><td>CM</td><td>.cm</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Canada</td><td>Canada</td><td>1</td><td>CA</td><td>.ca</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Cape Verde</td><td>Republic of Cape Verde</td><td>238</td><td>CV</td><td>.cv</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Cayman Islands</td><td>The Cayman Islands</td><td>1+345</td><td>KY</td><td>.ky</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Central African Republic</td><td>Central African Republic</td><td>236</td><td>CF</td><td>.cf</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Chad</td><td>Republic of Chad</td><td>235</td><td>TD</td><td>.td</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Chile</td><td>Republic of Chile</td><td>56</td><td>CL</td><td>.cl</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>China</td><td>People's Republic of China</td><td>86</td><td>CN</td><td>.cn</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Christmas Island</td><td>Christmas Island</td><td>61</td><td>CX</td><td>.cx</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Cocos (Keeling) Islands</td><td>Cocos (Keeling) Islands</td><td>61</td><td>CC</td><td>.cc</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Colombia</td><td>Republic of Colombia</td><td>57</td><td>CO</td><td>.co</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Comoros</td><td>Union of the Comoros</td><td>269</td><td>KM</td><td>.km</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Congo</td><td>Republic of the Congo</td><td>242</td><td>CG</td><td>.cg</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Cook Islands</td><td>Cook Islands</td><td>682</td><td>CK</td><td>.ck</td><td data-value="some_UN">some</td></tr>
+											<tr><td>Costa Rica</td><td>Republic of Costa Rica</td><td>506</td><td>CR</td><td>.cr</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Cote d'ivoire (Ivory Coast)</td><td>Republic of Côte D'Ivoire (Ivory Coast)</td><td>225</td><td>CI</td><td>.ci</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Croatia</td><td>Republic of Croatia</td><td>385</td><td>HR</td><td>.hr</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Cuba</td><td>Republic of Cuba</td><td>53</td><td>CU</td><td>.cu</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Curacao</td><td>Curaçao</td><td>599</td><td>CW</td><td>.cw</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Cyprus</td><td>Republic of Cyprus</td><td>357</td><td>CY</td><td>.cy</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Czech Republic</td><td>Czech Republic</td><td>420</td><td>CZ</td><td>.cz</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Democratic Republic of the Congo</td><td>Democratic Republic of the Congo</td><td>243</td><td>CD</td><td>.cd</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Denmark</td><td>Kingdom of Denmark</td><td>45</td><td>DK</td><td>.dk</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Djibouti</td><td>Republic of Djibouti</td><td>253</td><td>DJ</td><td>.dj</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Dominica</td><td>Commonwealth of Dominica</td><td>1+767</td><td>DM</td><td>.dm</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Dominican Republic</td><td>Dominican Republic</td><td>1+809, 8</td><td>DO</td><td>.do</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Ecuador</td><td>Republic of Ecuador</td><td>593</td><td>EC</td><td>.ec</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Egypt</td><td>Arab Republic of Egypt</td><td>20</td><td>EG</td><td>.eg</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>El Salvador</td><td>Republic of El Salvador</td><td>503</td><td>SV</td><td>.sv</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Equatorial Guinea</td><td>Republic of Equatorial Guinea</td><td>240</td><td>GQ</td><td>.gq</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Eritrea</td><td>State of Eritrea</td><td>291</td><td>ER</td><td>.er</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Estonia</td><td>Republic of Estonia</td><td>372</td><td>EE</td><td>.ee</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Ethiopia</td><td>Federal Democratic Republic of Ethiopia</td><td>251</td><td>ET</td><td>.et</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Falkland Islands (Malvinas)</td><td>The Falkland Islands (Malvinas)</td><td>500</td><td>FK</td><td>.fk</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Faroe Islands</td><td>The Faroe Islands</td><td>298</td><td>FO</td><td>.fo</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Fiji</td><td>Republic of Fiji</td><td>679</td><td>FJ</td><td>.fj</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Finland</td><td>Republic of Finland</td><td>358</td><td>FI</td><td>.fi</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>France</td><td>French Republic</td><td>33</td><td>FR</td><td>.fr</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>French Guiana</td><td>French Guiana</td><td>594</td><td>GF</td><td>.gf</td><td data-value="no_UN">no</td></tr>
+											<tr><td>French Polynesia</td><td>French Polynesia</td><td>689</td><td>PF</td><td>.pf</td><td data-value="no_UN">no</td></tr>
+											<tr><td>French Southern Territories</td><td>French Southern Territories</td><td></td><td>TF</td><td>.tf</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Gabon</td><td>Gabonese Republic</td><td>241</td><td>GA</td><td>.ga</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Gambia</td><td>Republic of The Gambia</td><td>220</td><td>GM</td><td>.gm</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Georgia</td><td>Georgia</td><td>995</td><td>GE</td><td>.ge</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Germany</td><td>Federal Republic of Germany</td><td>49</td><td>DE</td><td>.de</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Ghana</td><td>Republic of Ghana</td><td>233</td><td>GH</td><td>.gh</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Gibraltar</td><td>Gibraltar</td><td>350</td><td>GI</td><td>.gi</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Greece</td><td>Hellenic Republic</td><td>30</td><td>GR</td><td>.gr</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Greenland</td><td>Greenland</td><td>299</td><td>GL</td><td>.gl</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Grenada</td><td>Grenada</td><td>1+473</td><td>GD</td><td>.gd</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Guadaloupe</td><td>Guadeloupe</td><td>590</td><td>GP</td><td>.gp</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Guam</td><td>Guam</td><td>1+671</td><td>GU</td><td>.gu</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Guatemala</td><td>Republic of Guatemala</td><td>502</td><td>GT</td><td>.gt</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Guernsey</td><td>Guernsey</td><td>44</td><td>GG</td><td>.gg</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Guinea</td><td>Republic of Guinea</td><td>224</td><td>GN</td><td>.gn</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Guinea-Bissau</td><td>Republic of Guinea-Bissau</td><td>245</td><td>GW</td><td>.gw</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Guyana</td><td>Co-operative Republic of Guyana</td><td>592</td><td>GY</td><td>.gy</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Haiti</td><td>Republic of Haiti</td><td>509</td><td>HT</td><td>.ht</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Heard Island and McDonald Islands</td><td>Heard Island and McDonald Islands</td><td>NONE</td><td>HM</td><td>.hm</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Honduras</td><td>Republic of Honduras</td><td>504</td><td>HN</td><td>.hn</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Hong Kong</td><td>Hong Kong</td><td>852</td><td>HK</td><td>.hk</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Hungary</td><td>Hungary</td><td>36</td><td>HU</td><td>.hu</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Iceland</td><td>Republic of Iceland</td><td>354</td><td>IS</td><td>.is</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>India</td><td>Republic of India</td><td>91</td><td>IN</td><td>.in</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Indonesia</td><td>Republic of Indonesia</td><td>62</td><td>ID</td><td>.id</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Iran</td><td>Islamic Republic of Iran</td><td>98</td><td>IR</td><td>.ir</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Iraq</td><td>Republic of Iraq</td><td>964</td><td>IQ</td><td>.iq</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Ireland</td><td>Ireland</td><td>353</td><td>IE</td><td>.ie</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Isle of Man</td><td>Isle of Man</td><td>44</td><td>IM</td><td>.im</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Israel</td><td>State of Israel</td><td>972</td><td>IL</td><td>.il</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Italy</td><td>Italian Republic</td><td>39</td><td>IT</td><td>.jm</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Jamaica</td><td>Jamaica</td><td>1+876</td><td>JM</td><td>.jm</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Japan</td><td>Japan</td><td>81</td><td>JP</td><td>.jp</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Jersey</td><td>The Bailiwick of Jersey</td><td>44</td><td>JE</td><td>.je</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Jordan</td><td>Hashemite Kingdom of Jordan</td><td>962</td><td>JO</td><td>.jo</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Kazakhstan</td><td>Republic of Kazakhstan</td><td>7</td><td>KZ</td><td>.kz</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Kenya</td><td>Republic of Kenya</td><td>254</td><td>KE</td><td>.ke</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Kiribati</td><td>Republic of Kiribati</td><td>686</td><td>KI</td><td>.ki</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Kosovo</td><td>Republic of Kosovo</td><td>381</td><td>XK</td><td></td><td data-value="some_UN">some</td></tr>
+											<tr><td>Kuwait</td><td>State of Kuwait</td><td>965</td><td>KW</td><td>.kw</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Kyrgyzstan</td><td>Kyrgyz Republic</td><td>996</td><td>KG</td><td>.kg</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Laos</td><td>Lao People's Democratic Republic</td><td>856</td><td>LA</td><td>.la</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Latvia</td><td>Republic of Latvia</td><td>371</td><td>LV</td><td>.lv</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Lebanon</td><td>Republic of Lebanon</td><td>961</td><td>LB</td><td>.lb</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Lesotho</td><td>Kingdom of Lesotho</td><td>266</td><td>LS</td><td>.ls</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Liberia</td><td>Republic of Liberia</td><td>231</td><td>LR</td><td>.lr</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Libya</td><td>Libya</td><td>218</td><td>LY</td><td>.ly</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Liechtenstein</td><td>Principality of Liechtenstein</td><td>423</td><td>LI</td><td>.li</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Lithuania</td><td>Republic of Lithuania</td><td>370</td><td>LT</td><td>.lt</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Luxembourg</td><td>Grand Duchy of Luxembourg</td><td>352</td><td>LU</td><td>.lu</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Macao</td><td>The Macao Special Administrative Region</td><td>853</td><td>MO</td><td>.mo</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Macedonia</td><td>The Former Yugoslav Republic of Macedonia</td><td>389</td><td>MK</td><td>.mk</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Madagascar</td><td>Republic of Madagascar</td><td>261</td><td>MG</td><td>.mg</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Malawi</td><td>Republic of Malawi</td><td>265</td><td>MW</td><td>.mw</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Malaysia</td><td>Malaysia</td><td>60</td><td>MY</td><td>.my</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Maldives</td><td>Republic of Maldives</td><td>960</td><td>MV</td><td>.mv</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Mali</td><td>Republic of Mali</td><td>223</td><td>ML</td><td>.ml</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Malta</td><td>Republic of Malta</td><td>356</td><td>MT</td><td>.mt</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Marshall Islands</td><td>Republic of the Marshall Islands</td><td>692</td><td>MH</td><td>.mh</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Martinique</td><td>Martinique</td><td>596</td><td>MQ</td><td>.mq</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Mauritania</td><td>Islamic Republic of Mauritania</td><td>222</td><td>MR</td><td>.mr</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Mauritius</td><td>Republic of Mauritius</td><td>230</td><td>MU</td><td>.mu</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Mayotte</td><td>Mayotte</td><td>262</td><td>YT</td><td>.yt</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Mexico</td><td>United Mexican States</td><td>52</td><td>MX</td><td>.mx</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Micronesia</td><td>Federated States of Micronesia</td><td>691</td><td>FM</td><td>.fm</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Moldava</td><td>Republic of Moldova</td><td>373</td><td>MD</td><td>.md</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Monaco</td><td>Principality of Monaco</td><td>377</td><td>MC</td><td>.mc</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Mongolia</td><td>Mongolia</td><td>976</td><td>MN</td><td>.mn</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Montenegro</td><td>Montenegro</td><td>382</td><td>ME</td><td>.me</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Montserrat</td><td>Montserrat</td><td>1+664</td><td>MS</td><td>.ms</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Morocco</td><td>Kingdom of Morocco</td><td>212</td><td>MA</td><td>.ma</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Mozambique</td><td>Republic of Mozambique</td><td>258</td><td>MZ</td><td>.mz</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Myanmar (Burma)</td><td>Republic of the Union of Myanmar</td><td>95</td><td>MM</td><td>.mm</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Namibia</td><td>Republic of Namibia</td><td>264</td><td>NA</td><td>.na</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Nauru</td><td>Republic of Nauru</td><td>674</td><td>NR</td><td>.nr</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Nepal</td><td>Federal Democratic Republic of Nepal</td><td>977</td><td>NP</td><td>.np</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Netherlands</td><td>Kingdom of the Netherlands</td><td>31</td><td>NL</td><td>.nl</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>New Caledonia</td><td>New Caledonia</td><td>687</td><td>NC</td><td>.nc</td><td data-value="no_UN">no</td></tr>
+											<tr><td>New Zealand</td><td>New Zealand</td><td>64</td><td>NZ</td><td>.nz</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Nicaragua</td><td>Republic of Nicaragua</td><td>505</td><td>NI</td><td>.ni</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Niger</td><td>Republic of Niger</td><td>227</td><td>NE</td><td>.ne</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Nigeria</td><td>Federal Republic of Nigeria</td><td>234</td><td>NG</td><td>.ng</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Niue</td><td>Niue</td><td>683</td><td>NU</td><td>.nu</td><td data-value="some_UN">some</td></tr>
+											<tr><td>Norfolk Island</td><td>Norfolk Island</td><td>672</td><td>NF</td><td>.nf</td><td data-value="no_UN">no</td></tr>
+											<tr><td>North Korea</td><td>Democratic People's Republic of Korea</td><td>850</td><td>KP</td><td>.kp</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Northern Mariana Islands</td><td>Northern Mariana Islands</td><td>1+670</td><td>MP</td><td>.mp</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Norway</td><td>Kingdom of Norway</td><td>47</td><td>NO</td><td>.no</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Oman</td><td>Sultanate of Oman</td><td>968</td><td>OM</td><td>.om</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Pakistan</td><td>Islamic Republic of Pakistan</td><td>92</td><td>PK</td><td>.pk</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Palau</td><td>Republic of Palau</td><td>680</td><td>PW</td><td>.pw</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Palestine</td><td>State of Palestine (or Occupied Palestinian Territory)</td><td>970</td><td>PS</td><td>.ps</td><td data-value="some_UN">some</td></tr>
+											<tr><td>Panama</td><td>Republic of Panama</td><td>507</td><td>PA</td><td>.pa</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Papua New Guinea</td><td>Independent State of Papua New Guinea</td><td>675</td><td>PG</td><td>.pg</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Paraguay</td><td>Republic of Paraguay</td><td>595</td><td>PY</td><td>.py</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Peru</td><td>Republic of Peru</td><td>51</td><td>PE</td><td>.pe</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Phillipines</td><td>Republic of the Philippines</td><td>63</td><td>PH</td><td>.ph</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Pitcairn</td><td>Pitcairn</td><td>NONE</td><td>PN</td><td>.pn</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Poland</td><td>Republic of Poland</td><td>48</td><td>PL</td><td>.pl</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Portugal</td><td>Portuguese Republic</td><td>351</td><td>PT</td><td>.pt</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Puerto Rico</td><td>Commonwealth of Puerto Rico</td><td>1+939</td><td>PR</td><td>.pr</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Qatar</td><td>State of Qatar</td><td>974</td><td>QA</td><td>.qa</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Reunion</td><td>Réunion</td><td>262</td><td>RE</td><td>.re</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Romania</td><td>Romania</td><td>40</td><td>RO</td><td>.ro</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Russia</td><td>Russian Federation</td><td>7</td><td>RU</td><td>.ru</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Rwanda</td><td>Republic of Rwanda</td><td>250</td><td>RW</td><td>.rw</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Saint Barthelemy</td><td>Saint Barthélemy</td><td>590</td><td>BL</td><td>.bl</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Saint Helena</td><td>Saint Helena, Ascension and Tristan da Cunha</td><td>290</td><td>SH</td><td>.sh</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Saint Kitts and Nevis</td><td>Federation of Saint Christopher and Nevis</td><td>1+869</td><td>KN</td><td>.kn</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Saint Lucia</td><td>Saint Lucia</td><td>1+758</td><td>LC</td><td>.lc</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Saint Martin</td><td>Saint Martin</td><td>590</td><td>MF</td><td>.mf</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Saint Pierre and Miquelon</td><td>Saint Pierre and Miquelon</td><td>508</td><td>PM</td><td>.pm</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Saint Vincent and the Grenadines</td><td>Saint Vincent and the Grenadines</td><td>1+784</td><td>VC</td><td>.vc</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Samoa</td><td>Independent State of Samoa</td><td>685</td><td>WS</td><td>.ws</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>San Marino</td><td>Republic of San Marino</td><td>378</td><td>SM</td><td>.sm</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Sao Tome and Principe</td><td>Democratic Republic of São Tomé and Príncipe</td><td>239</td><td>ST</td><td>.st</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Saudi Arabia</td><td>Kingdom of Saudi Arabia</td><td>966</td><td>SA</td><td>.sa</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Senegal</td><td>Republic of Senegal</td><td>221</td><td>SN</td><td>.sn</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Serbia</td><td>Republic of Serbia</td><td>381</td><td>RS</td><td>.rs</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Seychelles</td><td>Republic of Seychelles</td><td>248</td><td>SC</td><td>.sc</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Sierra Leone</td><td>Republic of Sierra Leone</td><td>232</td><td>SL</td><td>.sl</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Singapore</td><td>Republic of Singapore</td><td>65</td><td>SG</td><td>.sg</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Sint Maarten</td><td>Sint Maarten</td><td>1+721</td><td>SX</td><td>.sx</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Slovakia</td><td>Slovak Republic</td><td>421</td><td>SK</td><td>.sk</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Slovenia</td><td>Republic of Slovenia</td><td>386</td><td>SI</td><td>.si</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Solomon Islands</td><td>Solomon Islands</td><td>677</td><td>SB</td><td>.sb</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Somalia</td><td>Somali Republic</td><td>252</td><td>SO</td><td>.so</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>South Africa</td><td>Republic of South Africa</td><td>27</td><td>ZA</td><td>.za</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>South Georgia and the South Sandwich Islands</td><td>South Georgia and the South Sandwich Islands</td><td>500</td><td>GS</td><td>.gs</td><td data-value="no_UN">no</td></tr>
+											<tr><td>South Korea</td><td>Republic of Korea</td><td>82</td><td>KR</td><td>.kr</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>South Sudan</td><td>Republic of South Sudan</td><td>211</td><td>SS</td><td>.ss</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Spain</td><td>Kingdom of Spain</td><td>34</td><td>ES</td><td>.es</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Sri Lanka</td><td>Democratic Socialist Republic of Sri Lanka</td><td>94</td><td>LK</td><td>.lk</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Sudan</td><td>Republic of the Sudan</td><td>249</td><td>SD</td><td>.sd</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Suriname</td><td>Republic of Suriname</td><td>597</td><td>SR</td><td>.sr</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Svalbard and Jan Mayen</td><td>Svalbard and Jan Mayen</td><td>47</td><td>SJ</td><td>.sj</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Swaziland</td><td>Kingdom of Swaziland</td><td>268</td><td>SZ</td><td>.sz</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Sweden</td><td>Kingdom of Sweden</td><td>46</td><td>SE</td><td>.se</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Switzerland</td><td>Swiss Confederation</td><td>41</td><td>CH</td><td>.ch</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Syria</td><td>Syrian Arab Republic</td><td>963</td><td>SY</td><td>.sy</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Taiwan</td><td>Republic of China (Taiwan)</td><td>886</td><td>TW</td><td>.tw</td><td data-value="former_UN">former</td></tr>
+											<tr><td>Tajikistan</td><td>Republic of Tajikistan</td><td>992</td><td>TJ</td><td>.tj</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Tanzania</td><td>United Republic of Tanzania</td><td>255</td><td>TZ</td><td>.tz</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Thailand</td><td>Kingdom of Thailand</td><td>66</td><td>TH</td><td>.th</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Timor-Leste (East Timor)</td><td>Democratic Republic of Timor-Leste</td><td>670</td><td>TL</td><td>.tl</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Togo</td><td>Togolese Republic</td><td>228</td><td>TG</td><td>.tg</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Tokelau</td><td>Tokelau</td><td>690</td><td>TK</td><td>.tk</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Tonga</td><td>Kingdom of Tonga</td><td>676</td><td>TO</td><td>.to</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Trinidad and Tobago</td><td>Republic of Trinidad and Tobago</td><td>1+868</td><td>TT</td><td>.tt</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Tunisia</td><td>Republic of Tunisia</td><td>216</td><td>TN</td><td>.tn</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Turkey</td><td>Republic of Turkey</td><td>90</td><td>TR</td><td>.tr</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Turkmenistan</td><td>Turkmenistan</td><td>993</td><td>TM</td><td>.tm</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Turks and Caicos Islands</td><td>Turks and Caicos Islands</td><td>1+649</td><td>TC</td><td>.tc</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Tuvalu</td><td>Tuvalu</td><td>688</td><td>TV</td><td>.tv</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Uganda</td><td>Republic of Uganda</td><td>256</td><td>UG</td><td>.ug</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Ukraine</td><td>Ukraine</td><td>380</td><td>UA</td><td>.ua</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>United Arab Emirates</td><td>United Arab Emirates</td><td>971</td><td>AE</td><td>.ae</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>United Kingdom</td><td>United Kingdom of Great Britain and Nothern Ireland</td><td>44</td><td>GB</td><td>.uk</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>United States</td><td>United States of America</td><td>1</td><td>US</td><td>.us</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>United States Minor Outlying Islands</td><td>United States Minor Outlying Islands</td><td>NONE</td><td>UM</td><td>NONE</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Uruguay</td><td>Eastern Republic of Uruguay</td><td>598</td><td>UY</td><td>.uy</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Uzbekistan</td><td>Republic of Uzbekistan</td><td>998</td><td>UZ</td><td>.uz</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Vanuatu</td><td>Republic of Vanuatu</td><td>678</td><td>VU</td><td>.vu</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Vatican City</td><td>State of the Vatican City</td><td>39</td><td>VA</td><td>.va</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Venezuela</td><td>Bolivarian Republic of Venezuela</td><td>58</td><td>VE</td><td>.ve</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Vietnam</td><td>Socialist Republic of Vietnam</td><td>84</td><td>VN</td><td>.vn</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Virgin Islands, British</td><td>British Virgin Islands</td><td>1+284</td><td>VG</td><td>.vg</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Virgin Islands, US</td><td>Virgin Islands of the United States</td><td>1+340</td><td>VI</td><td>.vi</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Wallis and Futuna</td><td>Wallis and Futuna</td><td>681</td><td>WF</td><td>.wf</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Western Sahara</td><td>Western Sahara</td><td>212</td><td>EH</td><td>.eh</td><td data-value="no_UN">no</td></tr>
+											<tr><td>Yemen</td><td>Republic of Yemen</td><td>967</td><td>YE</td><td>.ye</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Zambia</td><td>Republic of Zambia</td><td>260</td><td>ZM</td><td>.zm</td><td data-value="yes_UN">yes</td></tr>
+											<tr><td>Zimbabwe</td><td>Republic of Zimbabwe</td><td>263</td><td>ZW</td><td>.zw</td><td data-value="yes_UN">yes</td></tr>
+										</tbody>
+										<tfoot class="hide-if-no-paging">
+											<tr>
+												<td colspan="6" class="text-center">
+													<ul class="pagination pagination-sm"></ul>
+												</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<div id="footer_space"></div>
+		</div>
+	
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        &copy; 2013 Your Company
+                    </div>
+                    <div class="col-sm-8">
+                        <ul>
+                            <li><a href="#">Dashboard</a></li>
+                            <li>&middot;</li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li>&middot;</li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li>&middot;</li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-1 text-right">
+                        <small class="text-muted">v1.3</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        	
+		<nav id="side_fixed_nav">
+			<div class="slim_scroll">
+				<div class="side_nav_actions">
+					<a href="javascript:void(0)" id="side_fixed_nav_toggle"><span class="icon-align-justify"></span></a>
+					<div id="toogle_nav_visible" class="make-switch switch-mini" data-on="success" data-on-label="<i class='icon-lock'></i>" data-off-label="<i class='icon-unlock-alt'></i>">
+						<input id="nav_visible_input" type="checkbox">
+					</div>
+				</div>
+				<ul id="text_nav_side_fixed">
+					<li>
+						<a href="javascript:void(0)"><span class="icon-dashboard"></span>Dashboard</a>
+						<ul>
+							<li><a href="dashboard.html">Dashboard</a></li>
+							<li><a href="dashboard_drag_drop.html">Drag & Drop Dashboard</a></li>
+							<li>
+								<a href="javascript:void(0)">Navigations</a>
+								<ul>
+									<li><a href="nav_side_accordion.html">Accordion Navigation</a></li>
+									<li><a href="nav_side_icons.html">Icon Navigation</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0)"><span class="icon-th-list"></span>Forms</a>
+						<ul>
+							<li><a href="form_regular_elements.html">Regular elements</a></li>
+							<li><a href="form_extended_elements.html">Extended elements</a></li>
+							<li><a href="form_multiupload.html">Multiupload</a></li>
+							<li><a href="form_validation.html">Form validation</a></li>
+							<li><a href="wizard.html">Wizard</a></li>
+							<li><a href="wysiwg.html">WYSIWG Editor</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0)"><span class="icon-puzzle-piece"></span>Components</a>
+						<ul>
+							<li><a href="calendar.html">Calendar</a></li>
+							<li><a href="charts.html">Charts</a></li>
+							<li><a href="contact_list.html">Contact List</a></li>
+							<li><a href="editable_elements.html">Editable Elements</a></li>
+							<li><a href="file_manager.html">File manager</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="gmaps.html">Google Maps</a></li>
+							<li>
+								<a href="javascript:void(0)">Tables</a>
+								<ul>
+									<li><a href="datatables.html">Datatables</a></li>
+									<li><a href="regular_tables.html">Regular</a></li>
+									<li><a href="slick_grid.html">Slick Grid</a></li>
+									<li class="link_active"><a href="table_responsive.html">Responsive Table</a></li>
+								</ul>
+							</li>
+							<li><a href="tree_plugin.html">Tree Plugin</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0)"><span class="icon-beaker"></span>UI Elements</a>
+						<ul>
+							<li><a href="alerts_buttons.html">Alerts, Buttons</a></li>
+							<li><a href="grid.html">Grid</a></li>
+							<li><a href="icons.html">Icons</a></li>
+							<li><a href="notifications.html">Notifications</a></li>
+							<li><a href="panels.html">Panels</a></li>
+							<li><a href="tabs_accordions.html">Tabs, Accordions</a></li>
+							<li><a href="tooltips_popovers.html">Tooltips, Popovers</a></li>
+							<li><a href="typography.html">Typography</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0)"><span class="icon-leaf"></span>Other Pages</a>
+						<ul>
+							<li><a href="blank.html">Blank page</a></li>
+							<li><a href="chat.html">Chat</a></li>
+							<li><a href="contact_page.html">Contact Page</a></li>
+							<li><a href="error_404.html">Error 404</a></li>
+							<li><a href="help_faq.html">Help/Faq</a></li>
+							<li><a href="invoices.html">Invoices</a></li>
+							<li><a href="landing_page.html">Landing Page</a></li>
+							<li><a href="login_page.html">Login Page</a></li>
+							<li><a href="mailbox.html">Mailbox</a></li>
+							<li><a href="pricing_table.html">Pricing Table</a></li>
+							<li><a href="search_page.html">Search Page</a></li>
+							<li><a href="settings.html">Site Settings</a></li>
+							<li><a href="user_profile.html">User profile</a></li>
+						</ul>
+					</li>				
+				</ul>
+			</div>
+		</nav>
+
+	<!--[[ common plugins ]]-->
+	
+	<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+	<!-- bootstrap framework -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	<!-- jQuery resize event -->
+		<script src="js/jquery.ba-resize.min.js"></script>
+	<!-- jquery cookie -->
+		<script src="js/jquery_cookie.min.js"></script>
+	<!-- retina ready -->
+		<script src="js/retina.min.js"></script>
+	<!-- typeahead -->
+		<script src="js/lib/typeahead.js/typeahead.min.js"></script>
+		<script src="js/lib/typeahead.js/hogan-2.0.0.js"></script>
+
+	<!-- tinyNav -->
+		<script src="js/tinynav.js"></script>
+	<!-- slimscroll -->
+		<script src="js/lib/jQuery-slimScroll/jquery.slimscroll.min.js"></script>
+	
+	<!-- bootstrap switch -->
+		<script src="js/lib/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+	
+	<!-- touchSwipe -->
+		<script src="js/lib/TouchSwipe/jquery.touchSwipe.min.js"></script>
+		
+	<!-- Navgoco -->
+		<script src="js/lib/navgoco/jquery.navgoco.min.js"></script>
+		
+	<!-- ebro common scripts/functions -->
+		<script src="js/ebro_common.js"></script>
+	
+	
+	<!--[[ page specific plugins ]]-->
+		<!-- responsive table -->
+			<script src="js/lib/FooTable/js/footable.js"></script>
+			<script src="js/lib/FooTable/js/footable.sort.js"></script>
+			<script src="js/lib/FooTable/js/footable.filter.js"></script>
+			<script src="js/lib/FooTable/js/footable.paginate.js"></script>
+
+			<script src="js/pages/ebro_responsive_table.js"></script>
+
+
+	<!--[if lte IE 9]>
+		<script src="js/ie/jquery.placeholder.js"></script>
+		<script>
+			$(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+	
+    <!-- style switcher -->
+		<div id="style_switcher" class="switcher_open">
+            <a href="#" class="switcher_toggle"><i class="icon-cog"></i></a>
+			<div class="style_items">
+				<p class="style_title">Theme</p>
+				<ul class="clearfix" id="theme_switch">
+					<li class="style_active" style="background:#48ac2e" title="color_1">Color 1</li>
+					<li style="background:#993399" title="color_2">Color 2</li>
+					<li style="background:#168cbe" title="color_3">Color 3</li>
+					<li style="background:#d61110" title="color_4">Color 4</li>
+					<li style="background:#e96710" title="color_5">Color 5</li>
+					<li style="background:#262626" title="color_6">Color 6</li>
+					<li style="background:#01aaad" title="color_7">Color 7</li>
+					<li style="background:#9c5100" title="color_8">Color 8</li>
+					<li style="background:#e31a8f" title="color_9">Color 9</li>
+					<li style="background:#ffbb0e" title="color_10">Color 10</li>
+					<li style="background:#79be0b" title="color_11">Color 11</li>
+					<li style="background:#887171" title="color_12">Color 12</li>
+					<li style="background:#28abe2" title="color_13">Color 13</li>
+					<li style="background:#2f7138" title="color_14">Color 14</li>
+					<li style="background:#ce4627" title="color_15">Color 15</li>
+					<li style="background:#693986" title="color_16">Color 16</li>
+					<li style="background:#7f8c8d" title="color_17">Color 17</li>
+					<li style="background:#2c3e50" title="color_18">Color 18</li>
+					<li style="background:#34495e" title="color_19">Color 19</li>
+					<li style="background:#1abc9c" title="color_20">Color 20</li>
+				</ul>
+			</div>
+			<div class="style_items" id="sidebar_switch">
+				<p class="style_title">Sidebar position</p>
+				<label class="radio-inline">
+					<input type="radio" name="sidebar_position" id="sidebar_left" value="left" checked> Left
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="sidebar_position" id="sidebar_right" value="right"> Right
+				</label>
+			</div>
+			<div class="style_items" id="layout_switch">
+				<p class="style_title">Layout</p>
+				<select name="layout_style" id="layout_style" class="form-control">
+					<option value="fixed">Fixed</option>
+					<option value="full_width" class="hidden-sm hidden-md">Full Width</option>
+					<option value="boxed" class="hidden-sm hidden-md">Boxed</option>
+				</select>
+			</div>
+			<div class="style_items" id="style_pattern">
+				<p class="style_title">Pattern (boxed layout)</p>
+				<ul class="clearfix">
+					<li class="pattern_active" style="background:url(img/patterns/pattern_1.png) no-repeat 0 0" title="pattern_1">Pattern 1</li>
+					<li style="background:url(img/patterns/pattern_2.png) no-repeat 0 0" title="pattern_2">Pattern 2</li>
+					<li style="background:url(img/patterns/pattern_3.png) no-repeat 0 0" title="pattern_3">Pattern 3</li>
+					<li style="background:url(img/patterns/pattern_4.png) no-repeat 0 0" title="pattern_4">Pattern 4</li>
+					<li style="background:url(img/patterns/pattern_5.png) no-repeat 0 0" title="pattern_5">Pattern 5</li>
+					<li style="background:url(img/patterns/pattern_6.png) no-repeat 0 0" title="pattern_6">Pattern 6</li>
+					<li style="background:url(img/patterns/pattern_7.png) no-repeat 0 0" title="pattern_7">Pattern 7</li>
+					<li style="background:url(img/patterns/pattern_8.png) no-repeat 0 0" title="pattern_8">Pattern 8</li>
+					<li style="background:url(img/patterns/pattern_9.png) no-repeat 0 0" title="pattern_9">Pattern 9</li>
+					<li style="background:url(img/patterns/pattern_10.png) no-repeat 0 0" title="pattern_10">Pattern 10</li>
+				</ul>
+			</div>
+			<div class="text-center">
+				<button class="btn btn-default" id="style_reset">Reset</button>
+			</div>
+        </div>
+	</body>
+</html>

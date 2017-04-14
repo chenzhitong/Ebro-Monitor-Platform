@@ -1,0 +1,1420 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ebro Admin Template v1.3</title>
+		
+		<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		
+	<!-- bootstrap framework-->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<!-- todc-bootstrap -->
+		<link rel="stylesheet" href="css/todc-bootstrap.min.css">
+	<!-- font awesome -->        
+		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<!-- flag icon set -->        
+		<link rel="stylesheet" href="img/flags/flags.css">
+	<!-- retina ready -->
+		<link rel="stylesheet" href="css/retina.css">
+	<!-- bootstrap switch -->
+		<link rel="stylesheet" href="js/lib/bootstrap-switch/stylesheets/bootstrap-switch.css">
+		<link rel="stylesheet" href="js/lib/bootstrap-switch/stylesheets/ebro_bootstrapSwitch.css">	
+	
+	<!-- aditional stylesheets -->
+		<!-- linecons -->        
+			<link rel="stylesheet" href="css/linecons/style.css">
+
+	<!-- ebro styles -->
+		<link rel="stylesheet" href="css/style.css">
+	<!-- ebro theme -->
+		<link rel="stylesheet" href="css/theme/color_1.css" id="theme">
+		
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+		<script src="js/ie/html5shiv.js"></script>
+		<script src="js/ie/respond.min.js"></script>
+		<script src="js/ie/excanvas.min.js"></script>
+	<![endif]-->
+
+	<!-- custom fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+			
+	</head>
+	<body class=" sidebar_hidden side_fixed">
+		<div id="wrapper_all">
+			<header id="top_header">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6 col-sm-2">
+							<a href="dashboard1.html" class="logo_main" title="Ebro Admin Template:"><img src="img/logo_main.png" alt=""></a>
+						</div>
+						<div class="col-sm-push-4 col-sm-3 text-right hidden-xs">
+							<div class="notification_dropdown dropdown">
+								<a href="#" class="notification_icon dropdown-toggle" data-toggle="dropdown">
+									<span class="label label-danger">8</span>
+									<i class="icon-comment-alt icon-2x"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="dropdown_heading">Comments</div>
+										<div class="dropdown_content">
+											<ul class="dropdown_items">
+												<li>
+													<h3><span class="small_info">12:43</span><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet&hellip;</p>
+												</li>
+												<li>
+													<h3><span class="small_info">Today</span><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet&hellip;</p>
+												</li>
+												<li>
+													<h3><span class="small_info">14 Aug</span><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet&hellip;</p>
+												</li>
+											</ul>
+										</div>
+										<div class="dropdown_footer"><a href="#" class="btn btn-sm btn-default">Show all</a></div>
+									</li>
+								</ul>
+							</div>
+							<div class="notification_separator"></div>
+							<div class="notification_dropdown dropdown">
+								<a href="#" class="notification_icon dropdown-toggle" data-toggle="dropdown">
+									<span class="label label-danger">12</span>
+									<i class="icon-envelope-alt icon-2x"></i>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-wide">
+									<li>
+										<div class="dropdown_heading">Messages</div>
+										<div class="dropdown_content">
+											<ul class="dropdown_items">
+												<li>
+													<h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+													<p class="large_info">Sean Walter, 24.05.2014</p>
+													<i class="icon-exclamation-sign indicator"></i>
+												</li>
+												<li>
+													<h3><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aliquam assumenda&hellip;</p>
+													<p class="large_info">Sean Walter, 24.05.2014</p>
+												</li>
+												<li>
+													<h3><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet, consectetur&hellip;</p>
+													<p class="large_info">Sean Walter, 24.05.2014</p>
+													<i class="icon-exclamation-sign indicator"></i>
+												</li>
+											</ul>
+										</div>
+										<div class="dropdown_footer">
+											<a href="#" class="btn btn-sm btn-default">Show all</a>
+											<div class="pull-right dropdown_actions">
+												<a href="#"><i class="icon-refresh"></i></a>
+												<a href="#"><i class="icon-cog"></i></a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-push-4 col-sm-3">
+							<div class="pull-right dropdown">
+								<a href="#" class="user_info dropdown-toggle" title="Jonathan Hay" data-toggle="dropdown">
+									<img src="img/user_avatar.png" alt="">
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="user_profile.html">Profile</a></li>
+									<li><a href="javascript:void(0)">Another action</a></li>
+									<li><a href="login_page.html">Log Out</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-pull-6 col-sm-4">
+							<form class="main_search">
+								<input type="text" id="search_query" name="search_query" class="typeahead form-control">
+								<button type="submit" class="btn btn-primary btn-xs"><i class="icon-search icon-white"></i></button>
+							</form> 
+						</div>
+					</div>
+				</div>
+			</header>						
+			<nav id="top_navigation">
+				<div class="container">
+					<ul id="icon_nav_h" class="top_ico_nav clearfix">
+						<li>
+							<a href="#">
+								<i class="icon-home icon-2x"></i>
+								<span class="menu_label">Home</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<i class="icon-edit icon-2x"></i>
+								<span class="menu_label">Content</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<i class="icon-group icon-2x"></i>
+								<span class="menu_label">Users</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<span class="label label-danger">12</span>
+								<i class="icon-tasks icon-2x"></i>
+								<span class="menu_label">Tasks</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<i class="icon-beaker icon-2x"></i>
+								<span class="menu_label">Plugins</span>
+							</a>
+						</li>
+						<li class="active">             
+							<a href="#">
+								<i class="icon-book icon-2x"></i>
+								<span class="menu_label">Help</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<span class="label label-success">$2 347</span>
+								<i class="icon-tags icon-2x"></i>
+								<span class="menu_label">E-Commerce</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<i class="icon-wrench icon-2x"></i>
+								<span class="menu_label">Settings</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- mobile navigation -->
+			<nav id="mobile_navigation"></nav>
+			
+			<section id="breadcrumbs">
+				<div class="container">
+					<ul>
+						<li><a href="#">Ebro Admin</a></li>
+						<li><a href="#">UI Elements</a></li>
+						<li><span>Icons</span></li>						
+					</ul>
+				</div>
+			</section>
+			<section class="container clearfix main_section">
+				<div id="main_content_outer" class="clearfix">
+					<div id="main_content">
+						
+						<!-- main content -->
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">Glyphicon</h4>
+									</div>
+									<div class="panel_controls">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<div class="input-group">
+													<input type="text" placeholder="Click on icon to get html code" class="form-control icon_code">
+													<span class="input-group-addon icon_addon"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="panel-body">
+										<ul class="icon_list">
+											<li title="glyphicon glyphicon-adjust"><span class="glyphicon glyphicon-adjust"></span></li>
+											<li title="glyphicon glyphicon-align-center"><span class="glyphicon glyphicon-align-center"></span></li>
+											<li title="glyphicon glyphicon-align-justify"><span class="glyphicon glyphicon-align-justify"></span></li>
+											<li title="glyphicon glyphicon-align-left"><span class="glyphicon glyphicon-align-left"></span></li>
+											<li title="glyphicon glyphicon-align-right"><span class="glyphicon glyphicon-align-right"></span></li>
+											<li title="glyphicon glyphicon-arrow-down"><span class="glyphicon glyphicon-arrow-down"></span></li>
+											<li title="glyphicon glyphicon-arrow-left"><span class="glyphicon glyphicon-arrow-left"></span></li>
+											<li title="glyphicon glyphicon-arrow-right"><span class="glyphicon glyphicon-arrow-right"></span></li>
+											<li title="glyphicon glyphicon-arrow-up"><span class="glyphicon glyphicon-arrow-up"></span></li>
+											<li title="glyphicon glyphicon-asterisk"><span class="glyphicon glyphicon-asterisk"></span></li>
+											<li title="glyphicon glyphicon-backward"><span class="glyphicon glyphicon-backward"></span></li>
+											<li title="glyphicon glyphicon-ban-circle"><span class="glyphicon glyphicon-ban-circle"></span></li>
+											<li title="glyphicon glyphicon-barcode"><span class="glyphicon glyphicon-barcode"></span></li>
+											<li title="glyphicon glyphicon-bell"><span class="glyphicon glyphicon-bell"></span></li>
+											<li title="glyphicon glyphicon-bold"><span class="glyphicon glyphicon-bold"></span></li>
+											<li title="glyphicon glyphicon-book"><span class="glyphicon glyphicon-book"></span></li>
+											<li title="glyphicon glyphicon-bookmark"><span class="glyphicon glyphicon-bookmark"></span></li>
+											<li title="glyphicon glyphicon-briefcase"><span class="glyphicon glyphicon-briefcase"></span></li>
+											<li title="glyphicon glyphicon-bullhorn"><span class="glyphicon glyphicon-bullhorn"></span></li>
+											<li title="glyphicon glyphicon-calendar"><span class="glyphicon glyphicon-calendar"></span></li>
+											<li title="glyphicon glyphicon-camera"><span class="glyphicon glyphicon-camera"></span></li>
+											<li title="glyphicon glyphicon-certificate"><span class="glyphicon glyphicon-certificate"></span></li>
+											<li title="glyphicon glyphicon-check"><span class="glyphicon glyphicon-check"></span></li>
+											<li title="glyphicon glyphicon-chevron-down"><span class="glyphicon glyphicon-chevron-down"></span></li>
+											<li title="glyphicon glyphicon-chevron-left"><span class="glyphicon glyphicon-chevron-left"></span></li>
+											<li title="glyphicon glyphicon-chevron-right"><span class="glyphicon glyphicon-chevron-right"></span></li>
+											<li title="glyphicon glyphicon-chevron-up"><span class="glyphicon glyphicon-chevron-up"></span></li>
+											<li title="glyphicon glyphicon-circle-arrow-down"><span class="glyphicon glyphicon-circle-arrow-down"></span></li>
+											<li title="glyphicon glyphicon-circle-arrow-left"><span class="glyphicon glyphicon-circle-arrow-left"></span></li>
+											<li title="glyphicon glyphicon-circle-arrow-right"><span class="glyphicon glyphicon-circle-arrow-right"></span></li>
+											<li title="glyphicon glyphicon-circle-arrow-up"><span class="glyphicon glyphicon-circle-arrow-up"></span></li>
+											<li title="glyphicon glyphicon-cloud"><span class="glyphicon glyphicon-cloud"></span></li>
+											<li title="glyphicon glyphicon-cloud-download"><span class="glyphicon glyphicon-cloud-download"></span></li>
+											<li title="glyphicon glyphicon-cloud-upload"><span class="glyphicon glyphicon-cloud-upload"></span></li>
+											<li title="glyphicon glyphicon-cog"><span class="glyphicon glyphicon-cog"></span></li>
+											<li title="glyphicon glyphicon-collapse-down"><span class="glyphicon glyphicon-collapse-down"></span></li>
+											<li title="glyphicon glyphicon-collapse-up"><span class="glyphicon glyphicon-collapse-up"></span></li>
+											<li title="glyphicon glyphicon-comment"><span class="glyphicon glyphicon-comment"></span></li>
+											<li title="glyphicon glyphicon-compressed"><span class="glyphicon glyphicon-compressed"></span></li>
+											<li title="glyphicon glyphicon-copyright-mark"><span class="glyphicon glyphicon-copyright-mark"></span></li>
+											<li title="glyphicon glyphicon-credit-card"><span class="glyphicon glyphicon-credit-card"></span></li>
+											<li title="glyphicon glyphicon-cutlery"><span class="glyphicon glyphicon-cutlery"></span></li>
+											<li title="glyphicon glyphicon-dashboard"><span class="glyphicon glyphicon-dashboard"></span></li>
+											<li title="glyphicon glyphicon-download"><span class="glyphicon glyphicon-download"></span></li>
+											<li title="glyphicon glyphicon-download-alt"><span class="glyphicon glyphicon-download-alt"></span></li>
+											<li title="glyphicon glyphicon-earphone"><span class="glyphicon glyphicon-earphone"></span></li>
+											<li title="glyphicon glyphicon-edit"><span class="glyphicon glyphicon-edit"></span></li>
+											<li title="glyphicon glyphicon-eject"><span class="glyphicon glyphicon-eject"></span></li>
+											<li title="glyphicon glyphicon-envelope"><span class="glyphicon glyphicon-envelope"></span></li>
+											<li title="glyphicon glyphicon-euro"><span class="glyphicon glyphicon-euro"></span></li>
+											<li title="glyphicon glyphicon-exclamation-sign"><span class="glyphicon glyphicon-exclamation-sign"></span></li>
+											<li title="glyphicon glyphicon-expand"><span class="glyphicon glyphicon-expand"></span></li>
+											<li title="glyphicon glyphicon-export"><span class="glyphicon glyphicon-export"></span></li>
+											<li title="glyphicon glyphicon-eye-close"><span class="glyphicon glyphicon-eye-close"></span></li>
+											<li title="glyphicon glyphicon-eye-open"><span class="glyphicon glyphicon-eye-open"></span></li>
+											<li title="glyphicon glyphicon-facetime-video"><span class="glyphicon glyphicon-facetime-video"></span></li>
+											<li title="glyphicon glyphicon-fast-backward"><span class="glyphicon glyphicon-fast-backward"></span></li>
+											<li title="glyphicon glyphicon-fast-forward"><span class="glyphicon glyphicon-fast-forward"></span></li>
+											<li title="glyphicon glyphicon-file"><span class="glyphicon glyphicon-file"></span></li>
+											<li title="glyphicon glyphicon-film"><span class="glyphicon glyphicon-film"></span></li>
+											<li title="glyphicon glyphicon-filter"><span class="glyphicon glyphicon-filter"></span></li>
+											<li title="glyphicon glyphicon-fire"><span class="glyphicon glyphicon-fire"></span></li>
+											<li title="glyphicon glyphicon-flag"><span class="glyphicon glyphicon-flag"></span></li>
+											<li title="glyphicon glyphicon-flash"><span class="glyphicon glyphicon-flash"></span></li>
+											<li title="glyphicon glyphicon-floppy-disk"><span class="glyphicon glyphicon-floppy-disk"></span></li>
+											<li title="glyphicon glyphicon-floppy-open"><span class="glyphicon glyphicon-floppy-open"></span></li>
+											<li title="glyphicon glyphicon-floppy-remove"><span class="glyphicon glyphicon-floppy-remove"></span></li>
+											<li title="glyphicon glyphicon-floppy-save"><span class="glyphicon glyphicon-floppy-save"></span></li>
+											<li title="glyphicon glyphicon-floppy-saved"><span class="glyphicon glyphicon-floppy-saved"></span></li>
+											<li title="glyphicon glyphicon-folder-close"><span class="glyphicon glyphicon-folder-close"></span></li>
+											<li title="glyphicon glyphicon-folder-open"><span class="glyphicon glyphicon-folder-open"></span></li>
+											<li title="glyphicon glyphicon-font"><span class="glyphicon glyphicon-font"></span></li>
+											<li title="glyphicon glyphicon-forward"><span class="glyphicon glyphicon-forward"></span></li>
+											<li title="glyphicon glyphicon-fullscreen"><span class="glyphicon glyphicon-fullscreen"></span></li>
+											<li title="glyphicon glyphicon-gbp"><span class="glyphicon glyphicon-gbp"></span></li>
+											<li title="glyphicon glyphicon-gift"><span class="glyphicon glyphicon-gift"></span></li>
+											<li title="glyphicon glyphicon-glass"><span class="glyphicon glyphicon-glass"></span></li>
+											<li title="glyphicon glyphicon-globe"><span class="glyphicon glyphicon-globe"></span></li>
+											<li title="glyphicon glyphicon-hand-down"><span class="glyphicon glyphicon-hand-down"></span></li>
+											<li title="glyphicon glyphicon-hand-left"><span class="glyphicon glyphicon-hand-left"></span></li>
+											<li title="glyphicon glyphicon-hand-right"><span class="glyphicon glyphicon-hand-right"></span></li>
+											<li title="glyphicon glyphicon-hand-up"><span class="glyphicon glyphicon-hand-up"></span></li>
+											<li title="glyphicon glyphicon-hd-video"><span class="glyphicon glyphicon-hd-video"></span></li>
+											<li title="glyphicon glyphicon-hdd"><span class="glyphicon glyphicon-hdd"></span></li>
+											<li title="glyphicon glyphicon-header"><span class="glyphicon glyphicon-header"></span></li>
+											<li title="glyphicon glyphicon-headphones"><span class="glyphicon glyphicon-headphones"></span></li>
+											<li title="glyphicon glyphicon-heart"><span class="glyphicon glyphicon-heart"></span></li>
+											<li title="glyphicon glyphicon-heart-empty"><span class="glyphicon glyphicon-heart-empty"></span></li>
+											<li title="glyphicon glyphicon-home"><span class="glyphicon glyphicon-home"></span></li>
+											<li title="glyphicon glyphicon-import"><span class="glyphicon glyphicon-import"></span></li>
+											<li title="glyphicon glyphicon-inbox"><span class="glyphicon glyphicon-inbox"></span></li>
+											<li title="glyphicon glyphicon-indent-left"><span class="glyphicon glyphicon-indent-left"></span></li>
+											<li title="glyphicon glyphicon-indent-right"><span class="glyphicon glyphicon-indent-right"></span></li>
+											<li title="glyphicon glyphicon-info-sign"><span class="glyphicon glyphicon-info-sign"></span></li>
+											<li title="glyphicon glyphicon-italic"><span class="glyphicon glyphicon-italic"></span></li>
+											<li title="glyphicon glyphicon-leaf"><span class="glyphicon glyphicon-leaf"></span></li>
+											<li title="glyphicon glyphicon-link"><span class="glyphicon glyphicon-link"></span></li>
+											<li title="glyphicon glyphicon-list"><span class="glyphicon glyphicon-list"></span></li>
+											<li title="glyphicon glyphicon-list-alt"><span class="glyphicon glyphicon-list-alt"></span></li>
+											<li title="glyphicon glyphicon-lock"><span class="glyphicon glyphicon-lock"></span></li>
+											<li title="glyphicon glyphicon-log-in"><span class="glyphicon glyphicon-log-in"></span></li>
+											<li title="glyphicon glyphicon-log-out"><span class="glyphicon glyphicon-log-out"></span></li>
+											<li title="glyphicon glyphicon-magnet"><span class="glyphicon glyphicon-magnet"></span></li>
+											<li title="glyphicon glyphicon-map-marker"><span class="glyphicon glyphicon-map-marker"></span></li>
+											<li title="glyphicon glyphicon-minus"><span class="glyphicon glyphicon-minus"></span></li>
+											<li title="glyphicon glyphicon-minus-sign"><span class="glyphicon glyphicon-minus-sign"></span></li>
+											<li title="glyphicon glyphicon-move"><span class="glyphicon glyphicon-move"></span></li>
+											<li title="glyphicon glyphicon-music"><span class="glyphicon glyphicon-music"></span></li>
+											<li title="glyphicon glyphicon-new-window"><span class="glyphicon glyphicon-new-window"></span></li>
+											<li title="glyphicon glyphicon-off"><span class="glyphicon glyphicon-off"></span></li>
+											<li title="glyphicon glyphicon-ok"><span class="glyphicon glyphicon-ok"></span></li>
+											<li title="glyphicon glyphicon-ok-circle"><span class="glyphicon glyphicon-ok-circle"></span></li>
+											<li title="glyphicon glyphicon-ok-sign"><span class="glyphicon glyphicon-ok-sign"></span></li>
+											<li title="glyphicon glyphicon-open"><span class="glyphicon glyphicon-open"></span></li>
+											<li title="glyphicon glyphicon-paperclip"><span class="glyphicon glyphicon-paperclip"></span></li>
+											<li title="glyphicon glyphicon-pause"><span class="glyphicon glyphicon-pause"></span></li>
+											<li title="glyphicon glyphicon-pencil"><span class="glyphicon glyphicon-pencil"></span></li>
+											<li title="glyphicon glyphicon-phone"><span class="glyphicon glyphicon-phone"></span></li>
+											<li title="glyphicon glyphicon-phone-alt"><span class="glyphicon glyphicon-phone-alt"></span></li>
+											<li title="glyphicon glyphicon-picture"><span class="glyphicon glyphicon-picture"></span></li>
+											<li title="glyphicon glyphicon-plane"><span class="glyphicon glyphicon-plane"></span></li>
+											<li title="glyphicon glyphicon-play"><span class="glyphicon glyphicon-play"></span></li>
+											<li title="glyphicon glyphicon-play-circle"><span class="glyphicon glyphicon-play-circle"></span></li>
+											<li title="glyphicon glyphicon-plus"><span class="glyphicon glyphicon-plus"></span></li>
+											<li title="glyphicon glyphicon-plus-sign"><span class="glyphicon glyphicon-plus-sign"></span></li>
+											<li title="glyphicon glyphicon-print"><span class="glyphicon glyphicon-print"></span></li>
+											<li title="glyphicon glyphicon-pushpin"><span class="glyphicon glyphicon-pushpin"></span></li>
+											<li title="glyphicon glyphicon-qrcode"><span class="glyphicon glyphicon-qrcode"></span></li>
+											<li title="glyphicon glyphicon-question-sign"><span class="glyphicon glyphicon-question-sign"></span></li>
+											<li title="glyphicon glyphicon-random"><span class="glyphicon glyphicon-random"></span></li>
+											<li title="glyphicon glyphicon-record"><span class="glyphicon glyphicon-record"></span></li>
+											<li title="glyphicon glyphicon-refresh"><span class="glyphicon glyphicon-refresh"></span></li>
+											<li title="glyphicon glyphicon-registration-mark"><span class="glyphicon glyphicon-registration-mark"></span></li>
+											<li title="glyphicon glyphicon-remove"><span class="glyphicon glyphicon-remove"></span></li>
+											<li title="glyphicon glyphicon-remove-circle"><span class="glyphicon glyphicon-remove-circle"></span></li>
+											<li title="glyphicon glyphicon-remove-sign"><span class="glyphicon glyphicon-remove-sign"></span></li>
+											<li title="glyphicon glyphicon-repeat"><span class="glyphicon glyphicon-repeat"></span></li>
+											<li title="glyphicon glyphicon-resize-full"><span class="glyphicon glyphicon-resize-full"></span></li>
+											<li title="glyphicon glyphicon-resize-horizontal"><span class="glyphicon glyphicon-resize-horizontal"></span></li>
+											<li title="glyphicon glyphicon-resize-small"><span class="glyphicon glyphicon-resize-small"></span></li>
+											<li title="glyphicon glyphicon-resize-vertical"><span class="glyphicon glyphicon-resize-vertical"></span></li>
+											<li title="glyphicon glyphicon-retweet"><span class="glyphicon glyphicon-retweet"></span></li>
+											<li title="glyphicon glyphicon-road"><span class="glyphicon glyphicon-road"></span></li>
+											<li title="glyphicon glyphicon-save"><span class="glyphicon glyphicon-save"></span></li>
+											<li title="glyphicon glyphicon-saved"><span class="glyphicon glyphicon-saved"></span></li>
+											<li title="glyphicon glyphicon-screenshot"><span class="glyphicon glyphicon-screenshot"></span></li>
+											<li title="glyphicon glyphicon-sd-video"><span class="glyphicon glyphicon-sd-video"></span></li>
+											<li title="glyphicon glyphicon-search"><span class="glyphicon glyphicon-search"></span></li>
+											<li title="glyphicon glyphicon-send"><span class="glyphicon glyphicon-send"></span></li>
+											<li title="glyphicon glyphicon-share"><span class="glyphicon glyphicon-share"></span></li>
+											<li title="glyphicon glyphicon-share-alt"><span class="glyphicon glyphicon-share-alt"></span></li>
+											<li title="glyphicon glyphicon-shopping-cart"><span class="glyphicon glyphicon-shopping-cart"></span></li>
+											<li title="glyphicon glyphicon-signal"><span class="glyphicon glyphicon-signal"></span></li>
+											<li title="glyphicon glyphicon-sort"><span class="glyphicon glyphicon-sort"></span></li>
+											<li title="glyphicon glyphicon-sort-by-alphabet"><span class="glyphicon glyphicon-sort-by-alphabet"></span></li>
+											<li title="glyphicon glyphicon-sort-by-alphabet-alt"><span class="glyphicon glyphicon-sort-by-alphabet-alt"></span></li>
+											<li title="glyphicon glyphicon-sort-by-attributes"><span class="glyphicon glyphicon-sort-by-attributes"></span></li>
+											<li title="glyphicon glyphicon-sort-by-attributes-alt"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></li>
+											<li title="glyphicon glyphicon-sort-by-order"><span class="glyphicon glyphicon-sort-by-order"></span></li>
+											<li title="glyphicon glyphicon-sort-by-order-alt"><span class="glyphicon glyphicon-sort-by-order-alt"></span></li>
+											<li title="glyphicon glyphicon-sound-5-1"><span class="glyphicon glyphicon-sound-5-1"></span></li>
+											<li title="glyphicon glyphicon-sound-6-1"><span class="glyphicon glyphicon-sound-6-1"></span></li>
+											<li title="glyphicon glyphicon-sound-7-1"><span class="glyphicon glyphicon-sound-7-1"></span></li>
+											<li title="glyphicon glyphicon-sound-dolby"><span class="glyphicon glyphicon-sound-dolby"></span></li>
+											<li title="glyphicon glyphicon-sound-stereo"><span class="glyphicon glyphicon-sound-stereo"></span></li>
+											<li title="glyphicon glyphicon-star"><span class="glyphicon glyphicon-star"></span></li>
+											<li title="glyphicon glyphicon-star-empty"><span class="glyphicon glyphicon-star-empty"></span></li>
+											<li title="glyphicon glyphicon-stats"><span class="glyphicon glyphicon-stats"></span></li>
+											<li title="glyphicon glyphicon-step-backward"><span class="glyphicon glyphicon-step-backward"></span></li>
+											<li title="glyphicon glyphicon-step-forward"><span class="glyphicon glyphicon-step-forward"></span></li>
+											<li title="glyphicon glyphicon-stop"><span class="glyphicon glyphicon-stop"></span></li>
+											<li title="glyphicon glyphicon-subtitles"><span class="glyphicon glyphicon-subtitles"></span></li>
+											<li title="glyphicon glyphicon-tag"><span class="glyphicon glyphicon-tag"></span></li>
+											<li title="glyphicon glyphicon-tags"><span class="glyphicon glyphicon-tags"></span></li>
+											<li title="glyphicon glyphicon-tasks"><span class="glyphicon glyphicon-tasks"></span></li>
+											<li title="glyphicon glyphicon-text-height"><span class="glyphicon glyphicon-text-height"></span></li>
+											<li title="glyphicon glyphicon-text-width"><span class="glyphicon glyphicon-text-width"></span></li>
+											<li title="glyphicon glyphicon-th"><span class="glyphicon glyphicon-th"></span></li>
+											<li title="glyphicon glyphicon-th-large"><span class="glyphicon glyphicon-th-large"></span></li>
+											<li title="glyphicon glyphicon-th-list"><span class="glyphicon glyphicon-th-list"></span></li>
+											<li title="glyphicon glyphicon-thumbs-down"><span class="glyphicon glyphicon-thumbs-down"></span></li>
+											<li title="glyphicon glyphicon-thumbs-up"><span class="glyphicon glyphicon-thumbs-up"></span></li>
+											<li title="glyphicon glyphicon-time"><span class="glyphicon glyphicon-time"></span></li>
+											<li title="glyphicon glyphicon-tint"><span class="glyphicon glyphicon-tint"></span></li>
+											<li title="glyphicon glyphicon-tower"><span class="glyphicon glyphicon-tower"></span></li>
+											<li title="glyphicon glyphicon-transfer"><span class="glyphicon glyphicon-transfer"></span></li>
+											<li title="glyphicon glyphicon-trash"><span class="glyphicon glyphicon-trash"></span></li>
+											<li title="glyphicon glyphicon-tree-conifer"><span class="glyphicon glyphicon-tree-conifer"></span></li>
+											<li title="glyphicon glyphicon-tree-deciduous"><span class="glyphicon glyphicon-tree-deciduous"></span></li>
+											<li title="glyphicon glyphicon-unchecked"><span class="glyphicon glyphicon-unchecked"></span></li>
+											<li title="glyphicon glyphicon-upload"><span class="glyphicon glyphicon-upload"></span></li>
+											<li title="glyphicon glyphicon-usd"><span class="glyphicon glyphicon-usd"></span></li>
+											<li title="glyphicon glyphicon-user"><span class="glyphicon glyphicon-user"></span></li>
+											<li title="glyphicon glyphicon-volume-down"><span class="glyphicon glyphicon-volume-down"></span></li>
+											<li title="glyphicon glyphicon-volume-off"><span class="glyphicon glyphicon-volume-off"></span></li>
+											<li title="glyphicon glyphicon-volume-up"><span class="glyphicon glyphicon-volume-up"></span></li>
+											<li title="glyphicon glyphicon-warning-sign"><span class="glyphicon glyphicon-warning-sign"></span></li>
+											<li title="glyphicon glyphicon-wrench"><span class="glyphicon glyphicon-wrench"></span></li>
+											<li title="glyphicon glyphicon-zoom-in"><span class="glyphicon glyphicon-zoom-in"></span></li>
+											<li title="glyphicon glyphicon-zoom-out"><span class="glyphicon glyphicon-zoom-out"></span></li>
+										</ul>
+										<a href="http://glyphicons.com/">Glyphicons</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">Linecons</h4>
+									</div>
+									<div class="panel_controls">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<div class="input-group">
+													<input type="text" placeholder="Click on icon to get html code" class="form-control icon_code">
+													<span class="input-group-addon icon_addon"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="panel-body">
+										<ul class="icon_list">
+											<li title="li_heart"><span class="li_heart"></span></li>
+											<li title="li_cloud"><span class="li_cloud"></span></li>
+											<li title="li_star"><span class="li_star"></span></li>
+											<li title="li_tv"><span class="li_tv"></span></li>
+											<li title="li_sound"><span class="li_sound"></span></li>
+											<li title="li_video"><span class="li_video"></span></li>
+											<li title="li_trash"><span class="li_trash"></span></li>
+											<li title="li_user"><span class="li_user"></span></li>
+											<li title="li_key"><span class="li_key"></span></li>
+											<li title="li_search"><span class="li_search"></span></li>
+											<li title="li_settings"><span class="li_settings"></span></li>
+											<li title="li_camera"><span class="li_camera"></span></li>
+											<li title="li_tag"><span class="li_tag"></span></li>
+											<li title="li_lock"><span class="li_lock"></span></li>
+											<li title="li_bulb"><span class="li_bulb"></span></li>
+											<li title="li_pen"><span class="li_pen"></span></li>
+											<li title="li_diamond"><span class="li_diamond"></span></li>
+											<li title="li_display"><span class="li_display"></span></li>
+											<li title="li_location"><span class="li_location"></span></li>
+											<li title="li_eye"><span class="li_eye"></span></li>
+											<li title="li_bubble"><span class="li_bubble"></span></li>
+											<li title="li_stack"><span class="li_stack"></span></li>
+											<li title="li_cup"><span class="li_cup"></span></li>
+											<li title="li_phone"><span class="li_phone"></span></li>
+											<li title="li_news"><span class="li_news"></span></li>
+											<li title="li_mail"><span class="li_mail"></span></li>
+											<li title="li_like"><span class="li_like"></span></li>
+											<li title="li_photo"><span class="li_photo"></span></li>
+											<li title="li_note"><span class="li_note"></span></li>
+											<li title="li_clock"><span class="li_clock"></span></li>
+											<li title="li_paperplane"><span class="li_paperplane"></span></li>
+											<li title="li_params"><span class="li_params"></span></li>
+											<li title="li_banknote"><span class="li_banknote"></span></li>
+											<li title="li_data"><span class="li_data"></span></li>
+											<li title="li_music"><span class="li_music"></span></li>
+											<li title="li_megaphone"><span class="li_megaphone"></span></li>
+											<li title="li_study"><span class="li_study"></span></li>
+											<li title="li_lab"><span class="li_lab"></span></li>
+											<li title="li_food"><span class="li_food"></span></li>
+											<li title="li_t-shirt"><span class="li_t-shirt"></span></li>
+											<li title="li_fire"><span class="li_fire"></span></li>
+											<li title="li_clip"><span class="li_clip"></span></li>
+											<li title="li_shop"><span class="li_shop"></span></li>
+											<li title="li_calendar"><span class="li_calendar"></span></li>
+											<li title="li_vallet"><span class="li_vallet"></span></li>
+											<li title="li_vynil"><span class="li_vynil"></span></li>
+											<li title="li_truck"><span class="li_truck"></span></li>
+											<li title="li_world"><span class="li_world"></span></li>
+										</ul>
+										<a href="http://designmodo.com/linecons-free/">Linecons</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">Font Awesome</h4>
+									</div>
+									<div class="panel_controls">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<div class="input-group">
+													<input type="text" placeholder="Click on icon to get html code" class="form-control icon_code">
+													<span class="input-group-addon icon_addon"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="panel-body">
+										<ul class="icon_list">
+											<li title="icon-glass"><i class="icon-glass"></i></li>
+											<li title="icon-music"><i class="icon-music"></i></li>
+											<li title="icon-search"><i class="icon-search"></i></li>
+											<li title="icon-envelope-alt"><i class="icon-envelope-alt"></i></li>
+											<li title="icon-heart"><i class="icon-heart"></i></li>
+											<li title="icon-star"><i class="icon-star"></i></li>
+											<li title="icon-star-empty"><i class="icon-star-empty"></i></li>
+											<li title="icon-user"><i class="icon-user"></i></li>
+											<li title="icon-film"><i class="icon-film"></i></li>
+											<li title="icon-th-large"><i class="icon-th-large"></i></li>
+											<li title="icon-th"><i class="icon-th"></i></li>
+											<li title="icon-th-list"><i class="icon-th-list"></i></li>
+											<li title="icon-ok"><i class="icon-ok"></i></li>
+											<li title="icon-remove"><i class="icon-remove"></i></li>
+											<li title="icon-zoom-in"><i class="icon-zoom-in"></i></li>
+											<li title="icon-zoom-out"><i class="icon-zoom-out"></i></li>
+											<li title="icon-off"><i class="icon-off"></i></li>
+											<li title="icon-signal"><i class="icon-signal"></i></li>
+											<li title="icon-cog"><i class="icon-cog"></i></li>
+											<li title="icon-trash"><i class="icon-trash"></i></li>
+											<li title="icon-home"><i class="icon-home"></i></li>
+											<li title="icon-file-alt"><i class="icon-file-alt"></i></li>
+											<li title="icon-time"><i class="icon-time"></i></li>
+											<li title="icon-road"><i class="icon-road"></i></li>
+											<li title="icon-download-alt"><i class="icon-download-alt"></i></li>
+											<li title="icon-download"><i class="icon-download"></i></li>
+											<li title="icon-upload"><i class="icon-upload"></i></li>
+											<li title="icon-inbox"><i class="icon-inbox"></i></li>
+											<li title="icon-play-circle"><i class="icon-play-circle"></i></li>
+											<li title="icon-repeat"><i class="icon-repeat"></i></li>
+											<li title="icon-refresh"><i class="icon-refresh"></i></li>
+											<li title="icon-list-alt"><i class="icon-list-alt"></i></li>
+											<li title="icon-lock"><i class="icon-lock"></i></li>
+											<li title="icon-flag"><i class="icon-flag"></i></li>
+											<li title="icon-headphones"><i class="icon-headphones"></i></li>
+											<li title="icon-volume-off"><i class="icon-volume-off"></i></li>
+											<li title="icon-volume-down"><i class="icon-volume-down"></i></li>
+											<li title="icon-volume-up"><i class="icon-volume-up"></i></li>
+											<li title="icon-qrcode"><i class="icon-qrcode"></i></li>
+											<li title="icon-barcode"><i class="icon-barcode"></i></li>
+											<li title="icon-tag"><i class="icon-tag"></i></li>
+											<li title="icon-tags"><i class="icon-tags"></i></li>
+											<li title="icon-book"><i class="icon-book"></i></li>
+											<li title="icon-bookmark"><i class="icon-bookmark"></i></li>
+											<li title="icon-print"><i class="icon-print"></i></li>
+											<li title="icon-camera"><i class="icon-camera"></i></li>
+											<li title="icon-font"><i class="icon-font"></i></li>
+											<li title="icon-bold"><i class="icon-bold"></i></li>
+											<li title="icon-italic"><i class="icon-italic"></i></li>
+											<li title="icon-text-height"><i class="icon-text-height"></i></li>
+											<li title="icon-text-width"><i class="icon-text-width"></i></li>
+											<li title="icon-align-left"><i class="icon-align-left"></i></li>
+											<li title="icon-align-center"><i class="icon-align-center"></i></li>
+											<li title="icon-align-right"><i class="icon-align-right"></i></li>
+											<li title="icon-align-justify"><i class="icon-align-justify"></i></li>
+											<li title="icon-list"><i class="icon-list"></i></li>
+											<li title="icon-indent-left"><i class="icon-indent-left"></i></li>
+											<li title="icon-indent-right"><i class="icon-indent-right"></i></li>
+											<li title="icon-facetime-video"><i class="icon-facetime-video"></i></li>
+											<li title="icon-picture"><i class="icon-picture"></i></li>
+											<li title="icon-pencil"><i class="icon-pencil"></i></li>
+											<li title="icon-map-marker"><i class="icon-map-marker"></i></li>
+											<li title="icon-adjust"><i class="icon-adjust"></i></li>
+											<li title="icon-tint"><i class="icon-tint"></i></li>
+											<li title="icon-edit"><i class="icon-edit"></i></li>
+											<li title="icon-share"><i class="icon-share"></i></li>
+											<li title="icon-check"><i class="icon-check"></i></li>
+											<li title="icon-move"><i class="icon-move"></i></li>
+											<li title="icon-step-backward"><i class="icon-step-backward"></i></li>
+											<li title="icon-fast-backward"><i class="icon-fast-backward"></i></li>
+											<li title="icon-backward"><i class="icon-backward"></i></li>
+											<li title="icon-play"><i class="icon-play"></i></li>
+											<li title="icon-pause"><i class="icon-pause"></i></li>
+											<li title="icon-stop"><i class="icon-stop"></i></li>
+											<li title="icon-forward"><i class="icon-forward"></i></li>
+											<li title="icon-fast-forward"><i class="icon-fast-forward"></i></li>
+											<li title="icon-step-forward"><i class="icon-step-forward"></i></li>
+											<li title="icon-eject"><i class="icon-eject"></i></li>
+											<li title="icon-chevron-left"><i class="icon-chevron-left"></i></li>
+											<li title="icon-chevron-right"><i class="icon-chevron-right"></i></li>
+											<li title="icon-plus-sign"><i class="icon-plus-sign"></i></li>
+											<li title="icon-minus-sign"><i class="icon-minus-sign"></i></li>
+											<li title="icon-remove-sign"><i class="icon-remove-sign"></i></li>
+											<li title="icon-ok-sign"><i class="icon-ok-sign"></i></li>
+											<li title="icon-question-sign"><i class="icon-question-sign"></i></li>
+											<li title="icon-info-sign"><i class="icon-info-sign"></i></li>
+											<li title="icon-screenshot"><i class="icon-screenshot"></i></li>
+											<li title="icon-remove-circle"><i class="icon-remove-circle"></i></li>
+											<li title="icon-ok-circle"><i class="icon-ok-circle"></i></li>
+											<li title="icon-ban-circle"><i class="icon-ban-circle"></i></li>
+											<li title="icon-arrow-left"><i class="icon-arrow-left"></i></li>
+											<li title="icon-arrow-right"><i class="icon-arrow-right"></i></li>
+											<li title="icon-arrow-up"><i class="icon-arrow-up"></i></li>
+											<li title="icon-arrow-down"><i class="icon-arrow-down"></i></li>
+											<li title="icon-share-alt"><i class="icon-share-alt"></i></li>
+											<li title="icon-resize-full"><i class="icon-resize-full"></i></li>
+											<li title="icon-resize-small"><i class="icon-resize-small"></i></li>
+											<li title="icon-plus"><i class="icon-plus"></i></li>
+											<li title="icon-minus"><i class="icon-minus"></i></li>
+											<li title="icon-asterisk"><i class="icon-asterisk"></i></li>
+											<li title="icon-exclamation-sign"><i class="icon-exclamation-sign"></i></li>
+											<li title="icon-gift"><i class="icon-gift"></i></li>
+											<li title="icon-leaf"><i class="icon-leaf"></i></li>
+											<li title="icon-fire"><i class="icon-fire"></i></li>
+											<li title="icon-eye-open"><i class="icon-eye-open"></i></li>
+											<li title="icon-eye-close"><i class="icon-eye-close"></i></li>
+											<li title="icon-warning-sign"><i class="icon-warning-sign"></i></li>
+											<li title="icon-plane"><i class="icon-plane"></i></li>
+											<li title="icon-calendar"><i class="icon-calendar"></i></li>
+											<li title="icon-random"><i class="icon-random"></i></li>
+											<li title="icon-comment"><i class="icon-comment"></i></li>
+											<li title="icon-magnet"><i class="icon-magnet"></i></li>
+											<li title="icon-chevron-up"><i class="icon-chevron-up"></i></li>
+											<li title="icon-chevron-down"><i class="icon-chevron-down"></i></li>
+											<li title="icon-retweet"><i class="icon-retweet"></i></li>
+											<li title="icon-shopping-cart"><i class="icon-shopping-cart"></i></li>
+											<li title="icon-folder-close"><i class="icon-folder-close"></i></li>
+											<li title="icon-folder-open"><i class="icon-folder-open"></i></li>
+											<li title="icon-resize-vertical"><i class="icon-resize-vertical"></i></li>
+											<li title="icon-resize-horizontal"><i class="icon-resize-horizontal"></i></li>
+											<li title="icon-bar-chart"><i class="icon-bar-chart"></i></li>
+											<li title="icon-twitter-sign"><i class="icon-twitter-sign"></i></li>
+											<li title="icon-facebook-sign"><i class="icon-facebook-sign"></i></li>
+											<li title="icon-camera-retro"><i class="icon-camera-retro"></i></li>
+											<li title="icon-key"><i class="icon-key"></i></li>
+											<li title="icon-cogs"><i class="icon-cogs"></i></li>
+											<li title="icon-comments"><i class="icon-comments"></i></li>
+											<li title="icon-thumbs-up-alt"><i class="icon-thumbs-up-alt"></i></li>
+											<li title="icon-thumbs-down-alt"><i class="icon-thumbs-down-alt"></i></li>
+											<li title="icon-star-half"><i class="icon-star-half"></i></li>
+											<li title="icon-heart-empty"><i class="icon-heart-empty"></i></li>
+											<li title="icon-signout"><i class="icon-signout"></i></li>
+											<li title="icon-linkedin-sign"><i class="icon-linkedin-sign"></i></li>
+											<li title="icon-pushpin"><i class="icon-pushpin"></i></li>
+											<li title="icon-external-link"><i class="icon-external-link"></i></li>
+											<li title="icon-signin"><i class="icon-signin"></i></li>
+											<li title="icon-trophy"><i class="icon-trophy"></i></li>
+											<li title="icon-github-sign"><i class="icon-github-sign"></i></li>
+											<li title="icon-upload-alt"><i class="icon-upload-alt"></i></li>
+											<li title="icon-lemon"><i class="icon-lemon"></i></li>
+											<li title="icon-phone"><i class="icon-phone"></i></li>
+											<li title="icon-check-empty"><i class="icon-check-empty"></i></li>
+											<li title="icon-bookmark-empty"><i class="icon-bookmark-empty"></i></li>
+											<li title="icon-phone-sign"><i class="icon-phone-sign"></i></li>
+											<li title="icon-twitter"><i class="icon-twitter"></i></li>
+											<li title="icon-facebook"><i class="icon-facebook"></i></li>
+											<li title="icon-github"><i class="icon-github"></i></li>
+											<li title="icon-unlock"><i class="icon-unlock"></i></li>
+											<li title="icon-credit-card"><i class="icon-credit-card"></i></li>
+											<li title="icon-rss"><i class="icon-rss"></i></li>
+											<li title="icon-hdd"><i class="icon-hdd"></i></li>
+											<li title="icon-bullhorn"><i class="icon-bullhorn"></i></li>
+											<li title="icon-bell"><i class="icon-bell"></i></li>
+											<li title="icon-certificate"><i class="icon-certificate"></i></li>
+											<li title="icon-hand-right"><i class="icon-hand-right"></i></li>
+											<li title="icon-hand-left"><i class="icon-hand-left"></i></li>
+											<li title="icon-hand-up"><i class="icon-hand-up"></i></li>
+											<li title="icon-hand-down"><i class="icon-hand-down"></i></li>
+											<li title="icon-circle-arrow-left"><i class="icon-circle-arrow-left"></i></li>
+											<li title="icon-circle-arrow-right"><i class="icon-circle-arrow-right"></i></li>
+											<li title="icon-circle-arrow-up"><i class="icon-circle-arrow-up"></i></li>
+											<li title="icon-circle-arrow-down"><i class="icon-circle-arrow-down"></i></li>
+											<li title="icon-globe"><i class="icon-globe"></i></li>
+											<li title="icon-wrench"><i class="icon-wrench"></i></li>
+											<li title="icon-tasks"><i class="icon-tasks"></i></li>
+											<li title="icon-filter"><i class="icon-filter"></i></li>
+											<li title="icon-briefcase"><i class="icon-briefcase"></i></li>
+											<li title="icon-fullscreen"><i class="icon-fullscreen"></i></li>
+											<li title="icon-group"><i class="icon-group"></i></li>
+											<li title="icon-link"><i class="icon-link"></i></li>
+											<li title="icon-cloud"><i class="icon-cloud"></i></li>
+											<li title="icon-beaker"><i class="icon-beaker"></i></li>
+											<li title="icon-cut"><i class="icon-cut"></i></li>
+											<li title="icon-copy"><i class="icon-copy"></i></li>
+											<li title="icon-paper-clip"><i class="icon-paper-clip"></i></li>
+											<li title="icon-save"><i class="icon-save"></i></li>
+											<li title="icon-sign-blank"><i class="icon-sign-blank"></i></li>
+											<li title="icon-reorder"><i class="icon-reorder"></i></li>
+											<li title="icon-list-ul"><i class="icon-list-ul"></i></li>
+											<li title="icon-list-ol"><i class="icon-list-ol"></i></li>
+											<li title="icon-strikethrough"><i class="icon-strikethrough"></i></li>
+											<li title="icon-underline"><i class="icon-underline"></i></li>
+											<li title="icon-table"><i class="icon-table"></i></li>
+											<li title="icon-magic"><i class="icon-magic"></i></li>
+											<li title="icon-truck"><i class="icon-truck"></i></li>
+											<li title="icon-pinterest"><i class="icon-pinterest"></i></li>
+											<li title="icon-pinterest-sign"><i class="icon-pinterest-sign"></i></li>
+											<li title="icon-google-plus-sign"><i class="icon-google-plus-sign"></i></li>
+											<li title="icon-google-plus"><i class="icon-google-plus"></i></li>
+											<li title="icon-money"><i class="icon-money"></i></li>
+											<li title="icon-caret-down"><i class="icon-caret-down"></i></li>
+											<li title="icon-caret-up"><i class="icon-caret-up"></i></li>
+											<li title="icon-caret-left"><i class="icon-caret-left"></i></li>
+											<li title="icon-caret-right"><i class="icon-caret-right"></i></li>
+											<li title="icon-columns"><i class="icon-columns"></i></li>
+											<li title="icon-sort"><i class="icon-sort"></i></li>
+											<li title="icon-sort-down"><i class="icon-sort-down"></i></li>
+											<li title="icon-sort-up"><i class="icon-sort-up"></i></li>
+											<li title="icon-envelope"><i class="icon-envelope"></i></li>
+											<li title="icon-linkedin"><i class="icon-linkedin"></i></li>
+											<li title="icon-undo"><i class="icon-undo"></i></li>
+											<li title="icon-legal"><i class="icon-legal"></i></li>
+											<li title="icon-dashboard"><i class="icon-dashboard"></i></li>
+											<li title="icon-comment-alt"><i class="icon-comment-alt"></i></li>
+											<li title="icon-comments-alt"><i class="icon-comments-alt"></i></li>
+											<li title="icon-bolt"><i class="icon-bolt"></i></li>
+											<li title="icon-sitemap"><i class="icon-sitemap"></i></li>
+											<li title="icon-umbrella"><i class="icon-umbrella"></i></li>
+											<li title="icon-paste"><i class="icon-paste"></i></li>
+											<li title="icon-lightbulb"><i class="icon-lightbulb"></i></li>
+											<li title="icon-exchange"><i class="icon-exchange"></i></li>
+											<li title="icon-cloud-download"><i class="icon-cloud-download"></i></li>
+											<li title="icon-cloud-upload"><i class="icon-cloud-upload"></i></li>
+											<li title="icon-user-md"><i class="icon-user-md"></i></li>
+											<li title="icon-stethoscope"><i class="icon-stethoscope"></i></li>
+											<li title="icon-suitcase"><i class="icon-suitcase"></i></li>
+											<li title="icon-bell-alt"><i class="icon-bell-alt"></i></li>
+											<li title="icon-coffee"><i class="icon-coffee"></i></li>
+											<li title="icon-food"><i class="icon-food"></i></li>
+											<li title="icon-file-text-alt"><i class="icon-file-text-alt"></i></li>
+											<li title="icon-building"><i class="icon-building"></i></li>
+											<li title="icon-hospital"><i class="icon-hospital"></i></li>
+											<li title="icon-ambulance"><i class="icon-ambulance"></i></li>
+											<li title="icon-medkit"><i class="icon-medkit"></i></li>
+											<li title="icon-fighter-jet"><i class="icon-fighter-jet"></i></li>
+											<li title="icon-beer"><i class="icon-beer"></i></li>
+											<li title="icon-h-sign"><i class="icon-h-sign"></i></li>
+											<li title="icon-plus-sign-alt"><i class="icon-plus-sign-alt"></i></li>
+											<li title="icon-double-angle-left"><i class="icon-double-angle-left"></i></li>
+											<li title="icon-double-angle-right"><i class="icon-double-angle-right"></i></li>
+											<li title="icon-double-angle-up"><i class="icon-double-angle-up"></i></li>
+											<li title="icon-double-angle-down"><i class="icon-double-angle-down"></i></li>
+											<li title="icon-angle-left"><i class="icon-angle-left"></i></li>
+											<li title="icon-angle-right"><i class="icon-angle-right"></i></li>
+											<li title="icon-angle-up"><i class="icon-angle-up"></i></li>
+											<li title="icon-angle-down"><i class="icon-angle-down"></i></li>
+											<li title="icon-desktop"><i class="icon-desktop"></i></li>
+											<li title="icon-laptop"><i class="icon-laptop"></i></li>
+											<li title="icon-tablet"><i class="icon-tablet"></i></li>
+											<li title="icon-mobile-phone"><i class="icon-mobile-phone"></i></li>
+											<li title="icon-circle-blank"><i class="icon-circle-blank"></i></li>
+											<li title="icon-quote-left"><i class="icon-quote-left"></i></li>
+											<li title="icon-quote-right"><i class="icon-quote-right"></i></li>
+											<li title="icon-spinner"><i class="icon-spinner"></i></li>
+											<li title="icon-circle"><i class="icon-circle"></i></li>
+											<li title="icon-reply"><i class="icon-reply"></i></li>
+											<li title="icon-github-alt"><i class="icon-github-alt"></i></li>
+											<li title="icon-folder-close-alt"><i class="icon-folder-close-alt"></i></li>
+											<li title="icon-folder-open-alt"><i class="icon-folder-open-alt"></i></li>
+											<li title="icon-expand-alt"><i class="icon-expand-alt"></i></li>
+											<li title="icon-collapse-alt"><i class="icon-collapse-alt"></i></li>
+											<li title="icon-smile"><i class="icon-smile"></i></li>
+											<li title="icon-frown"><i class="icon-frown"></i></li>
+											<li title="icon-meh"><i class="icon-meh"></i></li>
+											<li title="icon-gamepad"><i class="icon-gamepad"></i></li>
+											<li title="icon-keyboard"><i class="icon-keyboard"></i></li>
+											<li title="icon-flag-alt"><i class="icon-flag-alt"></i></li>
+											<li title="icon-flag-checkered"><i class="icon-flag-checkered"></i></li>
+											<li title="icon-terminal"><i class="icon-terminal"></i></li>
+											<li title="icon-code"><i class="icon-code"></i></li>
+											<li title="icon-reply-all"><i class="icon-reply-all"></i></li>
+											<li title="icon-mail-reply-all"><i class="icon-mail-reply-all"></i></li>
+											<li title="icon-star-half-empty"><i class="icon-star-half-empty"></i></li>
+											<li title="icon-location-arrow"><i class="icon-location-arrow"></i></li>
+											<li title="icon-crop"><i class="icon-crop"></i></li>
+											<li title="icon-code-fork"><i class="icon-code-fork"></i></li>
+											<li title="icon-unlink"><i class="icon-unlink"></i></li>
+											<li title="icon-question"><i class="icon-question"></i></li>
+											<li title="icon-info"><i class="icon-info"></i></li>
+											<li title="icon-exclamation"><i class="icon-exclamation"></i></li>
+											<li title="icon-superscript"><i class="icon-superscript"></i></li>
+											<li title="icon-subscript"><i class="icon-subscript"></i></li>
+											<li title="icon-eraser"><i class="icon-eraser"></i></li>
+											<li title="icon-puzzle-piece"><i class="icon-puzzle-piece"></i></li>
+											<li title="icon-microphone"><i class="icon-microphone"></i></li>
+											<li title="icon-microphone-off"><i class="icon-microphone-off"></i></li>
+											<li title="icon-shield"><i class="icon-shield"></i></li>
+											<li title="icon-calendar-empty"><i class="icon-calendar-empty"></i></li>
+											<li title="icon-fire-extinguisher"><i class="icon-fire-extinguisher"></i></li>
+											<li title="icon-rocket"><i class="icon-rocket"></i></li>
+											<li title="icon-maxcdn"><i class="icon-maxcdn"></i></li>
+											<li title="icon-chevron-sign-left"><i class="icon-chevron-sign-left"></i></li>
+											<li title="icon-chevron-sign-right"><i class="icon-chevron-sign-right"></i></li>
+											<li title="icon-chevron-sign-up"><i class="icon-chevron-sign-up"></i></li>
+											<li title="icon-chevron-sign-down"><i class="icon-chevron-sign-down"></i></li>
+											<li title="icon-html5"><i class="icon-html5"></i></li>
+											<li title="icon-css3"><i class="icon-css3"></i></li>
+											<li title="icon-anchor"><i class="icon-anchor"></i></li>
+											<li title="icon-unlock-alt"><i class="icon-unlock-alt"></i></li>
+											<li title="icon-bullseye"><i class="icon-bullseye"></i></li>
+											<li title="icon-ellipsis-horizontal"><i class="icon-ellipsis-horizontal"></i></li>
+											<li title="icon-ellipsis-vertical"><i class="icon-ellipsis-vertical"></i></li>
+											<li title="icon-rss-sign"><i class="icon-rss-sign"></i></li>
+											<li title="icon-play-sign"><i class="icon-play-sign"></i></li>
+											<li title="icon-ticket"><i class="icon-ticket"></i></li>
+											<li title="icon-minus-sign-alt"><i class="icon-minus-sign-alt"></i></li>
+											<li title="icon-check-minus"><i class="icon-check-minus"></i></li>
+											<li title="icon-level-up"><i class="icon-level-up"></i></li>
+											<li title="icon-level-down"><i class="icon-level-down"></i></li>
+											<li title="icon-check-sign"><i class="icon-check-sign"></i></li>
+											<li title="icon-edit-sign"><i class="icon-edit-sign"></i></li>
+											<li title="icon-external-link-sign"><i class="icon-external-link-sign"></i></li>
+											<li title="icon-share-sign"><i class="icon-share-sign"></i></li>
+											<li title="icon-compass"><i class="icon-compass"></i></li>
+											<li title="icon-collapse"><i class="icon-collapse"></i></li>
+											<li title="icon-collapse-top"><i class="icon-collapse-top"></i></li>
+											<li title="icon-expand"><i class="icon-expand"></i></li>
+											<li title="icon-eur"><i class="icon-eur"></i></li>
+											<li title="icon-gbp"><i class="icon-gbp"></i></li>
+											<li title="icon-usd"><i class="icon-usd"></i></li>
+											<li title="icon-inr"><i class="icon-inr"></i></li>
+											<li title="icon-jpy"><i class="icon-jpy"></i></li>
+											<li title="icon-cny"><i class="icon-cny"></i></li>
+											<li title="icon-krw"><i class="icon-krw"></i></li>
+											<li title="icon-btc"><i class="icon-btc"></i></li>
+											<li title="icon-file"><i class="icon-file"></i></li>
+											<li title="icon-file-text"><i class="icon-file-text"></i></li>
+											<li title="icon-sort-by-alphabet"><i class="icon-sort-by-alphabet"></i></li>
+											<li title="icon-sort-by-alphabet-alt"><i class="icon-sort-by-alphabet-alt"></i></li>
+											<li title="icon-sort-by-attributes"><i class="icon-sort-by-attributes"></i></li>
+											<li title="icon-sort-by-attributes-alt"><i class="icon-sort-by-attributes-alt"></i></li>
+											<li title="icon-sort-by-order"><i class="icon-sort-by-order"></i></li>
+											<li title="icon-sort-by-order-alt"><i class="icon-sort-by-order-alt"></i></li>
+											<li title="icon-thumbs-up"><i class="icon-thumbs-up"></i></li>
+											<li title="icon-thumbs-down"><i class="icon-thumbs-down"></i></li>
+											<li title="icon-youtube-sign"><i class="icon-youtube-sign"></i></li>
+											<li title="icon-youtube"><i class="icon-youtube"></i></li>
+											<li title="icon-xing"><i class="icon-xing"></i></li>
+											<li title="icon-xing-sign"><i class="icon-xing-sign"></i></li>
+											<li title="icon-youtube-play"><i class="icon-youtube-play"></i></li>
+											<li title="icon-dropbox"><i class="icon-dropbox"></i></li>
+											<li title="icon-stackexchange"><i class="icon-stackexchange"></i></li>
+											<li title="icon-instagram"><i class="icon-instagram"></i></li>
+											<li title="icon-flickr"><i class="icon-flickr"></i></li>
+											<li title="icon-adn"><i class="icon-adn"></i></li>
+											<li title="icon-bitbucket"><i class="icon-bitbucket"></i></li>
+											<li title="icon-bitbucket-sign"><i class="icon-bitbucket-sign"></i></li>
+											<li title="icon-tumblr"><i class="icon-tumblr"></i></li>
+											<li title="icon-tumblr-sign"><i class="icon-tumblr-sign"></i></li>
+											<li title="icon-long-arrow-down"><i class="icon-long-arrow-down"></i></li>
+											<li title="icon-long-arrow-up"><i class="icon-long-arrow-up"></i></li>
+											<li title="icon-long-arrow-left"><i class="icon-long-arrow-left"></i></li>
+											<li title="icon-long-arrow-right"><i class="icon-long-arrow-right"></i></li>
+											<li title="icon-apple"><i class="icon-apple"></i></li>
+											<li title="icon-windows"><i class="icon-windows"></i></li>
+											<li title="icon-android"><i class="icon-android"></i></li>
+											<li title="icon-linux"><i class="icon-linux"></i></li>
+											<li title="icon-dribbble"><i class="icon-dribbble"></i></li>
+											<li title="icon-skype"><i class="icon-skype"></i></li>
+											<li title="icon-foursquare"><i class="icon-foursquare"></i></li>
+											<li title="icon-trello"><i class="icon-trello"></i></li>
+											<li title="icon-female"><i class="icon-female"></i></li>
+											<li title="icon-male"><i class="icon-male"></i></li>
+											<li title="icon-gittip"><i class="icon-gittip"></i></li>
+											<li title="icon-sun"><i class="icon-sun"></i></li>
+											<li title="icon-moon"><i class="icon-moon"></i></li>
+											<li title="icon-archive"><i class="icon-archive"></i></li>
+											<li title="icon-bug"><i class="icon-bug"></i></li>
+											<li title="icon-vk"><i class="icon-vk"></i></li>
+											<li title="icon-weibo"><i class="icon-weibo"></i></li>
+											<li title="icon-renren"><i class="icon-renren"></i></li>
+										</ul>
+										<a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">Flags</h4>
+									</div>
+									<div class="panel_controls">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<div class="input-group">
+													<input type="text" placeholder="Click on icon to get html code" class="form-control icon_code">
+													<span class="input-group-addon icon_addon"><span class="flag-PL"></span></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="panel-body">
+										<ul class="icon_list">
+											<li title="flag-AD"><i class="flag-AD"></i></li> 
+											<li title="flag-AE"><i class="flag-AE"></i></li> 
+											<li title="flag-AF"><i class="flag-AF"></i></li> 
+											<li title="flag-AG"><i class="flag-AG"></i></li> 
+											<li title="flag-AI"><i class="flag-AI"></i></li> 
+											<li title="flag-AL"><i class="flag-AL"></i></li> 
+											<li title="flag-AM"><i class="flag-AM"></i></li> 
+											<li title="flag-AN"><i class="flag-AN"></i></li> 
+											<li title="flag-AO"><i class="flag-AO"></i></li> 
+											<li title="flag-AQ"><i class="flag-AQ"></i></li> 
+											<li title="flag-AR"><i class="flag-AR"></i></li> 
+											<li title="flag-AS"><i class="flag-AS"></i></li> 
+											<li title="flag-AT"><i class="flag-AT"></i></li> 
+											<li title="flag-AU"><i class="flag-AU"></i></li> 
+											<li title="flag-AW"><i class="flag-AW"></i></li> 
+											<li title="flag-AX"><i class="flag-AX"></i></li> 
+											<li title="flag-AZ"><i class="flag-AZ"></i></li> 
+											<li title="flag-BA"><i class="flag-BA"></i></li> 
+											<li title="flag-BB"><i class="flag-BB"></i></li> 
+											<li title="flag-BD"><i class="flag-BD"></i></li> 
+											<li title="flag-BE"><i class="flag-BE"></i></li> 
+											<li title="flag-BF"><i class="flag-BF"></i></li> 
+											<li title="flag-BG"><i class="flag-BG"></i></li> 
+											<li title="flag-BH"><i class="flag-BH"></i></li> 
+											<li title="flag-BI"><i class="flag-BI"></i></li> 
+											<li title="flag-BJ"><i class="flag-BJ"></i></li> 
+											<li title="flag-BL"><i class="flag-BL"></i></li> 
+											<li title="flag-BM"><i class="flag-BM"></i></li> 
+											<li title="flag-BN"><i class="flag-BN"></i></li> 
+											<li title="flag-BO"><i class="flag-BO"></i></li> 
+											<li title="flag-BR"><i class="flag-BR"></i></li> 
+											<li title="flag-BS"><i class="flag-BS"></i></li> 
+											<li title="flag-BT"><i class="flag-BT"></i></li> 
+											<li title="flag-BW"><i class="flag-BW"></i></li> 
+											<li title="flag-BY"><i class="flag-BY"></i></li> 
+											<li title="flag-BZ"><i class="flag-BZ"></i></li> 
+											<li title="flag-CA"><i class="flag-CA"></i></li> 
+											<li title="flag-CC"><i class="flag-CC"></i></li> 
+											<li title="flag-CD"><i class="flag-CD"></i></li> 
+											<li title="flag-CF"><i class="flag-CF"></i></li> 
+											<li title="flag-CG"><i class="flag-CG"></i></li> 
+											<li title="flag-CH"><i class="flag-CH"></i></li> 
+											<li title="flag-CI"><i class="flag-CI"></i></li> 
+											<li title="flag-CK"><i class="flag-CK"></i></li> 
+											<li title="flag-CL"><i class="flag-CL"></i></li> 
+											<li title="flag-CM"><i class="flag-CM"></i></li> 
+											<li title="flag-CN"><i class="flag-CN"></i></li> 
+											<li title="flag-CO"><i class="flag-CO"></i></li> 
+											<li title="flag-CR"><i class="flag-CR"></i></li> 
+											<li title="flag-CU"><i class="flag-CU"></i></li> 
+											<li title="flag-CV"><i class="flag-CV"></i></li> 
+											<li title="flag-CW"><i class="flag-CW"></i></li> 
+											<li title="flag-CX"><i class="flag-CX"></i></li> 
+											<li title="flag-CY"><i class="flag-CY"></i></li> 
+											<li title="flag-CZ"><i class="flag-CZ"></i></li> 
+											<li title="flag-DE"><i class="flag-DE"></i></li> 
+											<li title="flag-DJ"><i class="flag-DJ"></i></li> 
+											<li title="flag-DK"><i class="flag-DK"></i></li> 
+											<li title="flag-DM"><i class="flag-DM"></i></li> 
+											<li title="flag-DO"><i class="flag-DO"></i></li> 
+											<li title="flag-DZ"><i class="flag-DZ"></i></li> 
+											<li title="flag-EC"><i class="flag-EC"></i></li> 
+											<li title="flag-EE"><i class="flag-EE"></i></li> 
+											<li title="flag-EG"><i class="flag-EG"></i></li> 
+											<li title="flag-EH"><i class="flag-EH"></i></li> 
+											<li title="flag-ER"><i class="flag-ER"></i></li> 
+											<li title="flag-ES"><i class="flag-ES"></i></li> 
+											<li title="flag-ET"><i class="flag-ET"></i></li> 
+											<li title="flag-EU"><i class="flag-EU"></i></li> 
+											<li title="flag-FI"><i class="flag-FI"></i></li> 
+											<li title="flag-FJ"><i class="flag-FJ"></i></li> 
+											<li title="flag-FK"><i class="flag-FK"></i></li> 
+											<li title="flag-FM"><i class="flag-FM"></i></li> 
+											<li title="flag-FO"><i class="flag-FO"></i></li> 
+											<li title="flag-FR"><i class="flag-FR"></i></li> 
+											<li title="flag-GA"><i class="flag-GA"></i></li> 
+											<li title="flag-GB"><i class="flag-GB"></i></li> 
+											<li title="flag-GD"><i class="flag-GD"></i></li> 
+											<li title="flag-GE"><i class="flag-GE"></i></li> 
+											<li title="flag-GG"><i class="flag-GG"></i></li> 
+											<li title="flag-GH"><i class="flag-GH"></i></li> 
+											<li title="flag-GI"><i class="flag-GI"></i></li> 
+											<li title="flag-GL"><i class="flag-GL"></i></li> 
+											<li title="flag-GM"><i class="flag-GM"></i></li> 
+											<li title="flag-GN"><i class="flag-GN"></i></li> 
+											<li title="flag-GQ"><i class="flag-GQ"></i></li> 
+											<li title="flag-GR"><i class="flag-GR"></i></li> 
+											<li title="flag-GS"><i class="flag-GS"></i></li> 
+											<li title="flag-GT"><i class="flag-GT"></i></li> 
+											<li title="flag-GU"><i class="flag-GU"></i></li> 
+											<li title="flag-GW"><i class="flag-GW"></i></li> 
+											<li title="flag-GY"><i class="flag-GY"></i></li> 
+											<li title="flag-HK"><i class="flag-HK"></i></li> 
+											<li title="flag-HN"><i class="flag-HN"></i></li> 
+											<li title="flag-HR"><i class="flag-HR"></i></li> 
+											<li title="flag-HT"><i class="flag-HT"></i></li> 
+											<li title="flag-HU"><i class="flag-HU"></i></li> 
+											<li title="flag-IC"><i class="flag-IC"></i></li> 
+											<li title="flag-ID"><i class="flag-ID"></i></li> 
+											<li title="flag-IE"><i class="flag-IE"></i></li> 
+											<li title="flag-IL"><i class="flag-IL"></i></li> 
+											<li title="flag-IM"><i class="flag-IM"></i></li> 
+											<li title="flag-IN"><i class="flag-IN"></i></li> 
+											<li title="flag-IQ"><i class="flag-IQ"></i></li> 
+											<li title="flag-IR"><i class="flag-IR"></i></li> 
+											<li title="flag-IS"><i class="flag-IS"></i></li> 
+											<li title="flag-IT"><i class="flag-IT"></i></li> 
+											<li title="flag-JE"><i class="flag-JE"></i></li> 
+											<li title="flag-JM"><i class="flag-JM"></i></li> 
+											<li title="flag-JO"><i class="flag-JO"></i></li> 
+											<li title="flag-JP"><i class="flag-JP"></i></li> 
+											<li title="flag-KE"><i class="flag-KE"></i></li> 
+											<li title="flag-KG"><i class="flag-KG"></i></li> 
+											<li title="flag-KH"><i class="flag-KH"></i></li> 
+											<li title="flag-KI"><i class="flag-KI"></i></li> 
+											<li title="flag-KM"><i class="flag-KM"></i></li> 
+											<li title="flag-KN"><i class="flag-KN"></i></li> 
+											<li title="flag-KP"><i class="flag-KP"></i></li> 
+											<li title="flag-KR"><i class="flag-KR"></i></li> 
+											<li title="flag-KW"><i class="flag-KW"></i></li> 
+											<li title="flag-KY"><i class="flag-KY"></i></li> 
+											<li title="flag-KZ"><i class="flag-KZ"></i></li> 
+											<li title="flag-LA"><i class="flag-LA"></i></li> 
+											<li title="flag-LB"><i class="flag-LB"></i></li> 
+											<li title="flag-LC"><i class="flag-LC"></i></li> 
+											<li title="flag-LI"><i class="flag-LI"></i></li> 
+											<li title="flag-LK"><i class="flag-LK"></i></li> 
+											<li title="flag-LR"><i class="flag-LR"></i></li> 
+											<li title="flag-LS"><i class="flag-LS"></i></li> 
+											<li title="flag-LT"><i class="flag-LT"></i></li> 
+											<li title="flag-LU"><i class="flag-LU"></i></li> 
+											<li title="flag-LV"><i class="flag-LV"></i></li> 
+											<li title="flag-LY"><i class="flag-LY"></i></li> 
+											<li title="flag-MA"><i class="flag-MA"></i></li> 
+											<li title="flag-MC"><i class="flag-MC"></i></li> 
+											<li title="flag-MD"><i class="flag-MD"></i></li> 
+											<li title="flag-ME"><i class="flag-ME"></i></li> 
+											<li title="flag-MF"><i class="flag-MF"></i></li> 
+											<li title="flag-MG"><i class="flag-MG"></i></li> 
+											<li title="flag-MH"><i class="flag-MH"></i></li> 
+											<li title="flag-MK"><i class="flag-MK"></i></li> 
+											<li title="flag-ML"><i class="flag-ML"></i></li> 
+											<li title="flag-MM"><i class="flag-MM"></i></li> 
+											<li title="flag-MN"><i class="flag-MN"></i></li> 
+											<li title="flag-MO"><i class="flag-MO"></i></li> 
+											<li title="flag-MP"><i class="flag-MP"></i></li> 
+											<li title="flag-MQ"><i class="flag-MQ"></i></li> 
+											<li title="flag-MR"><i class="flag-MR"></i></li> 
+											<li title="flag-MS"><i class="flag-MS"></i></li> 
+											<li title="flag-MT"><i class="flag-MT"></i></li> 
+											<li title="flag-MU"><i class="flag-MU"></i></li> 
+											<li title="flag-MV"><i class="flag-MV"></i></li> 
+											<li title="flag-MW"><i class="flag-MW"></i></li> 
+											<li title="flag-MX"><i class="flag-MX"></i></li> 
+											<li title="flag-MY"><i class="flag-MY"></i></li> 
+											<li title="flag-MZ"><i class="flag-MZ"></i></li> 
+											<li title="flag-NA"><i class="flag-NA"></i></li> 
+											<li title="flag-NC"><i class="flag-NC"></i></li> 
+											<li title="flag-NE"><i class="flag-NE"></i></li> 
+											<li title="flag-NF"><i class="flag-NF"></i></li> 
+											<li title="flag-NG"><i class="flag-NG"></i></li> 
+											<li title="flag-NI"><i class="flag-NI"></i></li> 
+											<li title="flag-NL"><i class="flag-NL"></i></li> 
+											<li title="flag-NO"><i class="flag-NO"></i></li> 
+											<li title="flag-NP"><i class="flag-NP"></i></li> 
+											<li title="flag-NR"><i class="flag-NR"></i></li> 
+											<li title="flag-NU"><i class="flag-NU"></i></li> 
+											<li title="flag-NZ"><i class="flag-NZ"></i></li> 
+											<li title="flag-OM"><i class="flag-OM"></i></li> 
+											<li title="flag-PA"><i class="flag-PA"></i></li> 
+											<li title="flag-PE"><i class="flag-PE"></i></li> 
+											<li title="flag-PF"><i class="flag-PF"></i></li> 
+											<li title="flag-PG"><i class="flag-PG"></i></li> 
+											<li title="flag-PH"><i class="flag-PH"></i></li> 
+											<li title="flag-PK"><i class="flag-PK"></i></li> 
+											<li title="flag-PL"><i class="flag-PL"></i></li> 
+											<li title="flag-PN"><i class="flag-PN"></i></li> 
+											<li title="flag-PR"><i class="flag-PR"></i></li> 
+											<li title="flag-PS"><i class="flag-PS"></i></li> 
+											<li title="flag-PT"><i class="flag-PT"></i></li> 
+											<li title="flag-PW"><i class="flag-PW"></i></li> 
+											<li title="flag-PY"><i class="flag-PY"></i></li> 
+											<li title="flag-QA"><i class="flag-QA"></i></li> 
+											<li title="flag-RO"><i class="flag-RO"></i></li> 
+											<li title="flag-RS"><i class="flag-RS"></i></li> 
+											<li title="flag-RU"><i class="flag-RU"></i></li> 
+											<li title="flag-RW"><i class="flag-RW"></i></li> 
+											<li title="flag-SA"><i class="flag-SA"></i></li> 
+											<li title="flag-SB"><i class="flag-SB"></i></li> 
+											<li title="flag-SC"><i class="flag-SC"></i></li> 
+											<li title="flag-SD"><i class="flag-SD"></i></li> 
+											<li title="flag-SE"><i class="flag-SE"></i></li> 
+											<li title="flag-SG"><i class="flag-SG"></i></li> 
+											<li title="flag-SH"><i class="flag-SH"></i></li> 
+											<li title="flag-SI"><i class="flag-SI"></i></li> 
+											<li title="flag-SK"><i class="flag-SK"></i></li> 
+											<li title="flag-SL"><i class="flag-SL"></i></li> 
+											<li title="flag-SM"><i class="flag-SM"></i></li> 
+											<li title="flag-SN"><i class="flag-SN"></i></li> 
+											<li title="flag-SO"><i class="flag-SO"></i></li> 
+											<li title="flag-SR"><i class="flag-SR"></i></li> 
+											<li title="flag-SS"><i class="flag-SS"></i></li> 
+											<li title="flag-ST"><i class="flag-ST"></i></li> 
+											<li title="flag-SV"><i class="flag-SV"></i></li> 
+											<li title="flag-SY"><i class="flag-SY"></i></li> 
+											<li title="flag-SZ"><i class="flag-SZ"></i></li> 
+											<li title="flag-TC"><i class="flag-TC"></i></li> 
+											<li title="flag-TD"><i class="flag-TD"></i></li> 
+											<li title="flag-TF"><i class="flag-TF"></i></li> 
+											<li title="flag-TG"><i class="flag-TG"></i></li> 
+											<li title="flag-TH"><i class="flag-TH"></i></li> 
+											<li title="flag-TJ"><i class="flag-TJ"></i></li> 
+											<li title="flag-TK"><i class="flag-TK"></i></li> 
+											<li title="flag-TL"><i class="flag-TL"></i></li> 
+											<li title="flag-TM"><i class="flag-TM"></i></li> 
+											<li title="flag-TN"><i class="flag-TN"></i></li> 
+											<li title="flag-TO"><i class="flag-TO"></i></li> 
+											<li title="flag-TR"><i class="flag-TR"></i></li> 
+											<li title="flag-TT"><i class="flag-TT"></i></li> 
+											<li title="flag-TV"><i class="flag-TV"></i></li> 
+											<li title="flag-TW"><i class="flag-TW"></i></li> 
+											<li title="flag-TZ"><i class="flag-TZ"></i></li> 
+											<li title="flag-UA"><i class="flag-UA"></i></li> 
+											<li title="flag-UG"><i class="flag-UG"></i></li> 
+											<li title="flag-US"><i class="flag-US"></i></li> 
+											<li title="flag-UY"><i class="flag-UY"></i></li> 
+											<li title="flag-UZ"><i class="flag-UZ"></i></li> 
+											<li title="flag-VA"><i class="flag-VA"></i></li> 
+											<li title="flag-VC"><i class="flag-VC"></i></li> 
+											<li title="flag-VE"><i class="flag-VE"></i></li> 
+											<li title="flag-VG"><i class="flag-VG"></i></li> 
+											<li title="flag-VI"><i class="flag-VI"></i></li> 
+											<li title="flag-VN"><i class="flag-VN"></i></li> 
+											<li title="flag-VU"><i class="flag-VU"></i></li> 
+											<li title="flag-WF"><i class="flag-WF"></i></li> 
+											<li title="flag-WS"><i class="flag-WS"></i></li> 
+											<li title="flag-YE"><i class="flag-YE"></i></li> 
+											<li title="flag-YT"><i class="flag-YT"></i></li> 
+											<li title="flag-ZA"><i class="flag-ZA"></i></li> 
+											<li title="flag-ZM"><i class="flag-ZM"></i></li> 
+											<li title="flag-ZW"><i class="flag-ZW"></i></li> 
+											<li title="flag-_abkhazia"><i class="flag-_abkhazia"></i></li> 
+											<li title="flag-_basque-country"><i class="flag-_basque-country"></i></li> 
+											<li title="flag-_british-antarctic-territory"><i class="flag-_british-antarctic-territory"></i></li> 
+											<li title="flag-_commonwealth"><i class="flag-_commonwealth"></i></li> 
+											<li title="flag-_england"><i class="flag-_england"></i></li> 
+											<li title="flag-_gosquared"><i class="flag-_gosquared"></i></li> 
+											<li title="flag-_kosovo"><i class="flag-_kosovo"></i></li> 
+											<li title="flag-_mars"><i class="flag-_mars"></i></li> 
+											<li title="flag-_nagorno-karabakh"><i class="flag-_nagorno-karabakh"></i></li> 
+											<li title="flag-_nato"><i class="flag-_nato"></i></li> 
+											<li title="flag-_northern-cyprus"><i class="flag-_northern-cyprus"></i></li> 
+											<li title="flag-_olympics"><i class="flag-_olympics"></i></li> 
+											<li title="flag-_red-cross"><i class="flag-_red-cross"></i></li> 
+											<li title="flag-_scotland"><i class="flag-_scotland"></i></li> 
+											<li title="flag-_somaliland"><i class="flag-_somaliland"></i></li> 
+											<li title="flag-_south-ossetia"><i class="flag-_south-ossetia"></i></li> 
+											<li title="flag-_united-nations"><i class="flag-_united-nations"></i></li> 
+											<li title="flag-_unknown"><i class="flag-_unknown"></i></li> 
+											<li title="flag-_wales"><i class="flag-_wales"></i></li> 
+										</ul>
+										<a href="http://www.gosquared.com/">Flag Icons</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<div id="footer_space"></div>
+		</div>
+	
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        &copy; 2013 Your Company
+                    </div>
+                    <div class="col-sm-8">
+                        <ul>
+                            <li><a href="#">Dashboard</a></li>
+                            <li>&middot;</li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li>&middot;</li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li>&middot;</li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-1 text-right">
+                        <small class="text-muted">v1.3</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        	
+		<nav id="side_fixed_nav">
+			<div class="slim_scroll">
+				<div class="side_nav_actions">
+					<a href="javascript:void(0)" id="side_fixed_nav_toggle"><span class="icon-align-justify"></span></a>
+					<div id="toogle_nav_visible" class="make-switch switch-mini" data-on="success" data-on-label="<i class='icon-lock'></i>" data-off-label="<i class='icon-unlock-alt'></i>">
+						<input id="nav_visible_input" type="checkbox">
+					</div>
+				</div>
+				<ul id="text_nav_side_fixed">
+					<li>
+						<a href="javascript:void(0)"><span class="icon-dashboard"></span>Dashboard</a>
+						<ul>
+							<li><a href="dashboard.html">Dashboard</a></li>
+							<li><a href="dashboard_drag_drop.html">Drag & Drop Dashboard</a></li>
+							<li>
+								<a href="javascript:void(0)">Navigations</a>
+								<ul>
+									<li><a href="nav_side_accordion.html">Accordion Navigation</a></li>
+									<li><a href="nav_side_icons.html">Icon Navigation</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0)"><span class="icon-th-list"></span>Forms</a>
+						<ul>
+							<li><a href="form_regular_elements.html">Regular elements</a></li>
+							<li><a href="form_extended_elements.html">Extended elements</a></li>
+							<li><a href="form_multiupload.html">Multiupload</a></li>
+							<li><a href="form_validation.html">Form validation</a></li>
+							<li><a href="wizard.html">Wizard</a></li>
+							<li><a href="wysiwg.html">WYSIWG Editor</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0)"><span class="icon-puzzle-piece"></span>Components</a>
+						<ul>
+							<li><a href="calendar.html">Calendar</a></li>
+							<li><a href="charts.html">Charts</a></li>
+							<li><a href="contact_list.html">Contact List</a></li>
+							<li><a href="editable_elements.html">Editable Elements</a></li>
+							<li><a href="file_manager.html">File manager</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="gmaps.html">Google Maps</a></li>
+							<li>
+								<a href="javascript:void(0)">Tables</a>
+								<ul>
+									<li><a href="datatables.html">Datatables</a></li>
+									<li><a href="regular_tables.html">Regular</a></li>
+									<li><a href="slick_grid.html">Slick Grid</a></li>
+									<li><a href="table_responsive.html">Responsive Table</a></li>
+								</ul>
+							</li>
+							<li><a href="tree_plugin.html">Tree Plugin</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0)"><span class="icon-beaker"></span>UI Elements</a>
+						<ul>
+							<li><a href="alerts_buttons.html">Alerts, Buttons</a></li>
+							<li><a href="grid.html">Grid</a></li>
+							<li class="link_active"><a href="icons.html">Icons</a></li>
+							<li><a href="notifications.html">Notifications</a></li>
+							<li><a href="panels.html">Panels</a></li>
+							<li><a href="tabs_accordions.html">Tabs, Accordions</a></li>
+							<li><a href="tooltips_popovers.html">Tooltips, Popovers</a></li>
+							<li><a href="typography.html">Typography</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0)"><span class="icon-leaf"></span>Other Pages</a>
+						<ul>
+							<li><a href="blank.html">Blank page</a></li>
+							<li><a href="chat.html">Chat</a></li>
+							<li><a href="contact_page.html">Contact Page</a></li>
+							<li><a href="error_404.html">Error 404</a></li>
+							<li><a href="help_faq.html">Help/Faq</a></li>
+							<li><a href="invoices.html">Invoices</a></li>
+							<li><a href="landing_page.html">Landing Page</a></li>
+							<li><a href="login_page.html">Login Page</a></li>
+							<li><a href="mailbox.html">Mailbox</a></li>
+							<li><a href="pricing_table.html">Pricing Table</a></li>
+							<li><a href="search_page.html">Search Page</a></li>
+							<li><a href="settings.html">Site Settings</a></li>
+							<li><a href="user_profile.html">User profile</a></li>
+						</ul>
+					</li>				
+				</ul>
+			</div>
+		</nav>
+
+	<!--[[ common plugins ]]-->
+	
+	<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+	<!-- bootstrap framework -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	<!-- jQuery resize event -->
+		<script src="js/jquery.ba-resize.min.js"></script>
+	<!-- jquery cookie -->
+		<script src="js/jquery_cookie.min.js"></script>
+	<!-- retina ready -->
+		<script src="js/retina.min.js"></script>
+	<!-- typeahead -->
+		<script src="js/lib/typeahead.js/typeahead.min.js"></script>
+		<script src="js/lib/typeahead.js/hogan-2.0.0.js"></script>
+
+	<!-- tinyNav -->
+		<script src="js/tinynav.js"></script>
+	<!-- slimscroll -->
+		<script src="js/lib/jQuery-slimScroll/jquery.slimscroll.min.js"></script>
+	
+	<!-- bootstrap switch -->
+		<script src="js/lib/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+	
+	<!-- touchSwipe -->
+		<script src="js/lib/TouchSwipe/jquery.touchSwipe.min.js"></script>
+		
+	<!-- Navgoco -->
+		<script src="js/lib/navgoco/jquery.navgoco.min.js"></script>
+		
+	<!-- ebro common scripts/functions -->
+		<script src="js/ebro_common.js"></script>
+	
+	
+	<!--[[ page specific plugins ]]-->
+
+		<script src="js/pages/ebro_icons.js"></script>
+
+
+	<!--[if lte IE 9]>
+		<script src="js/ie/jquery.placeholder.js"></script>
+		<script>
+			$(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+	
+    <!-- style switcher -->
+		<div id="style_switcher" class="switcher_open">
+            <a href="#" class="switcher_toggle"><i class="icon-cog"></i></a>
+			<div class="style_items">
+				<p class="style_title">Theme</p>
+				<ul class="clearfix" id="theme_switch">
+					<li class="style_active" style="background:#48ac2e" title="color_1">Color 1</li>
+					<li style="background:#993399" title="color_2">Color 2</li>
+					<li style="background:#168cbe" title="color_3">Color 3</li>
+					<li style="background:#d61110" title="color_4">Color 4</li>
+					<li style="background:#e96710" title="color_5">Color 5</li>
+					<li style="background:#262626" title="color_6">Color 6</li>
+					<li style="background:#01aaad" title="color_7">Color 7</li>
+					<li style="background:#9c5100" title="color_8">Color 8</li>
+					<li style="background:#e31a8f" title="color_9">Color 9</li>
+					<li style="background:#ffbb0e" title="color_10">Color 10</li>
+					<li style="background:#79be0b" title="color_11">Color 11</li>
+					<li style="background:#887171" title="color_12">Color 12</li>
+					<li style="background:#28abe2" title="color_13">Color 13</li>
+					<li style="background:#2f7138" title="color_14">Color 14</li>
+					<li style="background:#ce4627" title="color_15">Color 15</li>
+					<li style="background:#693986" title="color_16">Color 16</li>
+					<li style="background:#7f8c8d" title="color_17">Color 17</li>
+					<li style="background:#2c3e50" title="color_18">Color 18</li>
+					<li style="background:#34495e" title="color_19">Color 19</li>
+					<li style="background:#1abc9c" title="color_20">Color 20</li>
+				</ul>
+			</div>
+			<div class="style_items" id="sidebar_switch">
+				<p class="style_title">Sidebar position</p>
+				<label class="radio-inline">
+					<input type="radio" name="sidebar_position" id="sidebar_left" value="left" checked> Left
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="sidebar_position" id="sidebar_right" value="right"> Right
+				</label>
+			</div>
+			<div class="style_items" id="layout_switch">
+				<p class="style_title">Layout</p>
+				<select name="layout_style" id="layout_style" class="form-control">
+					<option value="fixed">Fixed</option>
+					<option value="full_width" class="hidden-sm hidden-md">Full Width</option>
+					<option value="boxed" class="hidden-sm hidden-md">Boxed</option>
+				</select>
+			</div>
+			<div class="style_items" id="style_pattern">
+				<p class="style_title">Pattern (boxed layout)</p>
+				<ul class="clearfix">
+					<li class="pattern_active" style="background:url(img/patterns/pattern_1.png) no-repeat 0 0" title="pattern_1">Pattern 1</li>
+					<li style="background:url(img/patterns/pattern_2.png) no-repeat 0 0" title="pattern_2">Pattern 2</li>
+					<li style="background:url(img/patterns/pattern_3.png) no-repeat 0 0" title="pattern_3">Pattern 3</li>
+					<li style="background:url(img/patterns/pattern_4.png) no-repeat 0 0" title="pattern_4">Pattern 4</li>
+					<li style="background:url(img/patterns/pattern_5.png) no-repeat 0 0" title="pattern_5">Pattern 5</li>
+					<li style="background:url(img/patterns/pattern_6.png) no-repeat 0 0" title="pattern_6">Pattern 6</li>
+					<li style="background:url(img/patterns/pattern_7.png) no-repeat 0 0" title="pattern_7">Pattern 7</li>
+					<li style="background:url(img/patterns/pattern_8.png) no-repeat 0 0" title="pattern_8">Pattern 8</li>
+					<li style="background:url(img/patterns/pattern_9.png) no-repeat 0 0" title="pattern_9">Pattern 9</li>
+					<li style="background:url(img/patterns/pattern_10.png) no-repeat 0 0" title="pattern_10">Pattern 10</li>
+				</ul>
+			</div>
+			<div class="text-center">
+				<button class="btn btn-default" id="style_reset">Reset</button>
+			</div>
+        </div>
+	</body>
+</html>
