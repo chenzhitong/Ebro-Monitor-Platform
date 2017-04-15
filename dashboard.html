@@ -36,8 +36,9 @@
 	<!-- ebro styles -->
 		<link rel="stylesheet" href="css/style.css">
 	<!-- ebro theme -->
-		<link rel="stylesheet" href="css/theme/color_1.css" id="theme">
+		<link rel="stylesheet" href="css/theme/color_3.css" id="theme">
 		
+        <link rel="stylesheet" href="css/Site.css">
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" href="css/ie.css">
 		<script src="js/ie/html5shiv.js"></script>
@@ -289,7 +290,7 @@
 								</div>
 							</div>
 							
-							<div class="col-sm-4">
+							<div class="col-sm-5">
 								<div class="panel panel-default">
 									<div class="panel-heading">
 										<h4 class="panel-title">节点类型</h4>
@@ -331,19 +332,73 @@
 									</table>
 								</div>
 							</div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-7">
+                                <div class="my-table striped">
+                                    <div class="row title">
+                                        <div class="col-xs-5">节点名称</div>
+                                        <div class="col-xs-2">出块状态</div>
+                                        <div class="col-xs-2">网络状态</div>
+                                        <div class="col-xs-3">时间</div>
+                                    </div>
+                                    <ul id="ul_nodes">
+                                        <li class="row" style="display:none">
+                                            <div class="col-xs-5 note-name"></div>
+                                            <div class="col-xs-2 note-state"></div>
+                                            <div class="col-xs-2 note-net"></div>
+                                            <div class="col-xs-3 note-time"></div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+						</div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="box_stat_circular">
+                                    <div class="box_stat_circular_a color_b">
+                                        <h5>正常节点</h5>
+                                    </div>
+                                    <div class="box_stat_circular_middle">
+                                        <div class="easy_chart easy_chart_b" data-percent="80"><span>4个</span></div>
+                                    </div>
+                                    <div class="box_stat_circular_b">
+                                        <p style="margin-top:10px">正常节点占比</p>
+                                        <p>80%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="box_stat_circular">
+                                    <div class="box_stat_circular_a color_a">
+                                        <h5>故障节点</h5>
+                                    </div>
+                                    <div class="box_stat_circular_middle">
+                                        <div class="easy_chart easy_chart_a" data-percent="20"><span>1个</span></div>
+                                    </div>
+                                    <div class="box_stat_circular_b">
+                                        <p style="margin-top:10px">故障节点占比</p>
+                                        <p>20%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+						<div class="row">
+                            <div class="col-sm-5">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h4 class="panel-title">节点类型</h4>
+                                        <h4 class="panel-title">存证类型</h4>
                                     </div>
                                     <div class="panel-body">
                                         <div class="chart_wrapper">
                                             <div class="chart_b" id="flot_browsers2">
                                                 <script>
-                                                    data_browsers = [
-                                                        { label: "共识节点", data: 1428 },
-                                                        { label: "全节点", data: 858 },
-                                                        { label: "轻节点", data: 647 }
+                                                    data_browsers2 = [
+                                                        { label: "采集存证", data: 1428 },
+                                                        { label: "确认存证", data: 858 },
+                                                        { label: "审议存证", data: 647 },
+                                                        { label: "复议存证", data: 567 }
                                                     ];
                                                 </script>
                                             </div>
@@ -352,31 +407,125 @@
                                     <table class="table table-striped">
                                         <thead>
                                             <tr>
-                                                <th>节点类型</th>
-                                                <th class="col_small col_center">节点数量</th>
+                                                <th>存证类型</th>
+                                                <th class="col_small col_center">数量数量</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><a href="#">共识节点</a></td>
+                                                <td><a href="#">采集存证</a></td>
                                                 <td class="col_center">1428</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="#">全节点</a></td>
+                                                <td><a href="#">确认存证</a></td>
                                                 <td class="col_center">858</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="#">轻节点</a></td>
+                                                <td><a href="#">审议存证</a></td>
                                                 <td class="col_center">647</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">复议存证</a></td>
+                                                <td class="col_center">567</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
+                            <div class="col-sm-7">
+                                <div class="my-table striped">
+                                    <div class="row title">
+                                        <div class="col-xs-5">存证ID</div>
+                                        <div class="col-xs-2">存证类型</div>
+                                        <div class="col-xs-2">存证人</div>
+                                        <div class="col-xs-3">存证时间</div>
+                                    </div>
+                                    <ul id="cz_list">
+                                        <li class="row" style="display:none">
+                                            <div class="col-xs-5 cz-id"></div>
+                                            <div class="col-xs-2 cz-type"></div>
+                                            <div class="col-xs-2 cz-people"></div>
+                                            <div class="col-xs-3 cz-time"></div>
+                                        </li>
+                                    </ul>
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">存证数量</h4>
+                                    </div>
+                                    <div class="chart_wrapper">
+                                        <div class="chart_wrapper">
+                                            <div id="flot_overview" class="chart_b">
+                                                <script>
+                                                    data_new_visits = [
+                                                        [new Date('08/02/2012').getTime(), 1148],
+                                                        [new Date('08/03/2012').getTime(), 920],
+                                                        [new Date('08/04/2012').getTime(), 623],
+                                                        [new Date('08/05/2012').getTime(), 701],
+                                                        [new Date('08/06/2012').getTime(), 502],
+                                                        [new Date('08/07/2012').getTime(), 1472],
+                                                        [new Date('08/08/2012').getTime(), 1273],
+                                                        [new Date('08/09/2012').getTime(), 782],
+                                                        [new Date('08/10/2012').getTime(), 410],
+                                                        [new Date('08/11/2012').getTime(), 893],
+                                                        [new Date('08/12/2012').getTime(), 774],
+                                                        [new Date('08/13/2012').getTime(), 621],
+                                                        [new Date('08/14/2012').getTime(), 373],
+                                                        [new Date('08/15/2012').getTime(), 420]
+                                                    ];
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">各角色所做存证</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="chart_wrapper">
+                                            <div class="chart_b" id="flot_browsers3">
+                                                <script>
+                                                    data_browsers3 = [
+                                                        { label: "当事人", data: 1428 },
+                                                        { label: "采集员", data: 858 },
+                                                        { label: "村委干部", data: 647 }
+                                                    ];
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">确认/未确认存证</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="chart_wrapper">
+                                            <div class="chart_b" id="flot_browsers4">
+                                                <script>
+                                                    data_browsers4 = [
+                                                        { label: "已确认", data: 1428 },
+                                                        { label: "未确认", data: 858 }
+                                                    ];
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-						</div>
-						
+                        </div>
+
 					</div>
 				</div>
 			</section>
@@ -569,7 +718,34 @@
 			});
 		</script>
 	<![endif]-->
-	
+        <script>
+            for (var i = 0; i < 7; i++) {
+                var ul = $("#ul_nodes");
+                var liTemp = ul.find("li:eq(0)");
+                var li = liTemp.clone(true);
+
+                li.removeAttr("style");
+                li.find(".note-name").text('https://seed2.something.com:10331');
+                li.find(".note-state").text('正常');
+                li.find(".note-net").text('正常');
+                li.find(".note-time").text('2017-04-11 23:50:22');
+                li.addClass("add");
+                ul.append(li);
+            }
+            for (var i = 0; i < 11; i++) {
+                var ul = $("#cz_list");
+                var liTemp = ul.find("li:eq(0)");
+                var li = liTemp.clone(true);
+
+                li.removeAttr("style");
+                li.find(".cz-id").text('7cb237e9934c7c862a55781a55e5c6c64e8c7576e8259aba6fb1e59d144dee28');
+                li.find(".cz-type").text('采集存证');
+                li.find(".cz-people").text('李某');
+                li.find(".cz-time").text('2017-04-11 23:50:22');
+                li.addClass("add");
+                ul.append(li);
+            }
+        </script>
     <!-- style switcher -->
 		<div id="style_switcher" class="switcher_open">
             <a href="#" class="switcher_toggle"><i class="icon-cog"></i></a>

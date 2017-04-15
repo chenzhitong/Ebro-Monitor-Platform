@@ -140,7 +140,7 @@
 					},
 					colors: ["#7baf42","#efa91f","#f04b51","#0892cd","#b1b1b1"]
                 });
-                $.plot('#flot_browsers2', data_browsers, {
+                $.plot('#flot_browsers2', data_browsers2, {
                     series: {
                         pie: {
                             show: true,
@@ -162,7 +162,50 @@
                     },
                     colors: ["#7baf42", "#efa91f", "#f04b51", "#0892cd", "#b1b1b1"]
                 });
-				
+                $.plot('#flot_browsers3', data_browsers3, {
+                    series: {
+                        pie: {
+                            show: true,
+                            radius: 1,
+                            label: {
+                                show: true,
+                                radius: 3 / 4,
+                                formatter: labelFormatter,
+                                background: {
+                                    opacity: 0.5,
+                                    color: '#000'
+                                }
+                            },
+                            innerRadius: 0.5
+                        }
+                    },
+                    legend: {
+                        show: false
+                    },
+                    colors: ["#b1b1b1", "#0892cd", "#f04b51", "#efa91f", "#7baf42"]
+                });
+                $.plot('#flot_browsers4', data_browsers4, {
+                    series: {
+                        pie: {
+                            show: true,
+                            radius: 1,
+                            label: {
+                                show: true,
+                                radius: 3 / 4,
+                                formatter: labelFormatter,
+                                background: {
+                                    opacity: 0.5,
+                                    color: '#000'
+                                }
+                            },
+                            innerRadius: 0.5
+                        }
+                    },
+                    legend: {
+                        show: false
+                    },
+                    colors: ["#b1b1b1", "#0892cd", "#f04b51", "#efa91f", "#7baf42"]
+                });
 			}
 		},
 		social : function() {
